@@ -1,5 +1,6 @@
-peso=float(input("Introduce tu peso en kg:"))
-altura=float(input("Introduce tu estatura en metros: "))
+peso=float(input("Introduce tu peso en kg:").replace(',', '.'))
+altura=float(input("Introduce tu estatura en metros: ").replace(',', '.'))
+
 
 imc=peso/(altura**2)
 
