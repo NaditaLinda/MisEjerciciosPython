@@ -1,0 +1,1 @@
+There are my first exercises in python and my first README in english. I hope someone find them interesting. I have tried to add functionality and versatility to the code despite the simplicity of each program.
