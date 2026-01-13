@@ -1,10 +1,10 @@
 PESO_PAYASO = 112
-PESO_MUN_ECA = 75
+PESO_MUNECA = 75
 
 num_payasos = int(input("Introduce el número de payasos vendidos: "))
-num_mu_necas = int(input("Introduce el número de muñecas vendidas: "))
+num_munecas = int(input("Introduce el número de muñecas vendidas: "))
 
-peso_total = (num_payasos * PESO_PAYASO) + (num_mu_necas * PESO_MUN_ECA)
+peso_total = (num_payasos * PESO_PAYASO) + (num_munecas * PESO_MUNECA)
 
 print(f"El peso total del paquete es: {peso_total} g")
 

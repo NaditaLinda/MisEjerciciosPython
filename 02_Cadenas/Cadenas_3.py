@@ -1,6 +1,7 @@
 nombre = input("¿Cómo te llamas? ")
 
 nombre_mayusculas = nombre.upper()
-numero_letras = len(nombre)
+nombre_sin_espacios = nombre.replace(" ", "")
+numero_letras = len(nombre_sin_espacios)
 
-print(f"{nombre_mayusculas} tiene {numero_letras} letras")
+print(f"{nombre_mayusculas} tiene {numero_letras} letras (sin contar espacios)")
