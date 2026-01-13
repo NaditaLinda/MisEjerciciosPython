@@ -11,7 +11,7 @@ else:
     tipo_pizza = "No vegetariana"
     menu = {"1": "Peperoni", "2": "Jamón", "3": "Salmón"}
 
-# 4. Mostrar el menú dinámico
+# Mostrar el menú dinámico
 print(f"\nIngredientes {tipo_pizza}s disponibles:")
 for numero, nombre in menu.items():
     print(f"{numero}. {nombre}")
