@@ -1,5 +1,5 @@
 # Recibo el dato y lo convierto a entero
-numero = int(input("Introduce un número entero: "))
+numero = int (input("Introduce un número entero: "))
 
 # Lógica usando el operador módulo (%)
 if numero % 2 == 0:

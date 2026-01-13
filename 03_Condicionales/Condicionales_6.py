@@ -7,8 +7,7 @@ sexo = input("¿Cuál es tu sexo (M para mujer, H para hombre)? ")
 nombre_u = nombre.upper()
 sexo_u = sexo.upper()
 
-# Lógica de asignación de grupo
-# Grupo A: (Mujer AND < M) OR (Hombre AND > N)
+# Lógica para la asignación de grupo
 if (sexo_u == "M" and nombre_u < "M") or (sexo_u == "H" and nombre_u > "N"):
     grupo = "A"
 else:
