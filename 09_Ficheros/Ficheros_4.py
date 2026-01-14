@@ -9,7 +9,7 @@ def contar_palabras_url():
         with urllib.request.urlopen(url) as respuesta:
             
             # Lectura y decodificación
-            # Los datos viajan por internet como 'bytes', hay que pasarlos a texto (str)
+            # Paso los datos de bytes a texto (str)
             contenido_bytes = respuesta.read()
             contenido_texto = contenido_bytes.decode('utf-8')
             
