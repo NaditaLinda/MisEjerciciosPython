@@ -3,8 +3,8 @@ import pandas as pd
 def gestionar_ventas():
     # Entrada de datos
     try:
-        inicio = int(input("Introduce el año inicial: ".strip()))
-        fin = int(input("Introduce el año final: ".strip()))
+        inicio = int(input("Introduce el año inicial: ").strip())
+        fin = int(input("Introduce el año final: ").strip())
         
         ventas = {}
         
