@@ -9,7 +9,7 @@ def gestionar_ventas():
         ventas = {}
         
         for año in range(inicio, fin + 1):
-            venta = float(input(f"Introduce las ventas para el año {año}: ".strip().replace(',', '.')))
+            venta = float(input(f"Introduce las ventas para el año {año}: ").strip().replace(',', '.'))
             ventas[año] = venta
 
         # Creación de la Serie
