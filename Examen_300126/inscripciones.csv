@@ -1,0 +1,36 @@
+﻿id_inscripcion,id_finca,tipo_inscripcion,fecha,observaciones
+3001,1001,Donación,2018-01-01,Escritura de donación inter vivos
+3002,1002,Agrupación,2018-02-15,Agrupación de fincas colindantes
+3003,1003,Agrupación,2018-04-01,Agrupación de fincas colindantes
+3004,1004,División Horizontal,2018-05-16,Constitución de régimen de división horizontal
+3005,1005,Compraventa,2018-06-30,Escritura pública ante notario
+3006,1006,Obra Nueva,2018-08-14,Declaración de obra nueva terminada
+3007,1007,Obra Nueva,2018-09-28,Declaración de obra nueva terminada
+3008,1008,Herencia,2018-11-12,Adjudicación por herencia
+3009,1009,Compraventa,2018-12-27,Venta de particular a particular
+3010,1010,Compraventa,2019-02-10,Escritura pública ante notario
+3011,1011,Compraventa,2019-03-27,Venta de particular a particular
+3012,1012,Compraventa,2019-05-11,Escritura pública ante notario
+3013,1013,Obra Nueva,2019-06-25,Declaración de obra nueva terminada
+3014,1014,Herencia,2019-08-09,Sucesión intestada
+3015,1015,Agrupación,2019-09-23,Agrupación de fincas colindantes
+3016,1016,Donación,2019-11-07,Escritura de donación inter vivos
+3017,1017,Herencia,2019-12-22,Sucesión intestada
+3018,1018,Obra Nueva,2020-02-05,Declaración de obra nueva terminada
+3019,1019,Agrupación,2020-03-21,Agrupación de fincas colindantes
+3020,1020,Herencia,2020-05-05,Sucesión intestada
+3021,1021,Herencia,2020-06-19,Adjudicación por herencia
+3022,1022,Obra Nueva,2020-08-03,Declaración de obra nueva terminada
+3023,1023,Agrupación,2020-09-17,Agrupación de fincas colindantes
+3024,1024,División Horizontal,2020-11-01,Constitución de régimen de división horizontal
+3025,1025,Donación,2020-12-16,Escritura de donación inter vivos
+3026,1026,División Horizontal,2021-01-30,Constitución de régimen de división horizontal
+3027,1027,División Horizontal,2021-03-16,Constitución de régimen de división horizontal
+3028,1028,Compraventa,2021-04-30,Escritura pública ante notario
+3029,1029,Compraventa,2021-06-14,Venta de particular a particular
+3030,1030,Compraventa,2021-07-29,Venta de particular a particular
+3031,1010,Donación,2021-09-12,Escritura de donación inter vivos
+3032,1010,Agrupación,2021-10-27,Agrupación de fincas colindantes
+3033,1006,Agrupación,2021-12-11,Agrupación de fincas colindantes
+3034,1017,División Horizontal,2022-01-25,Constitución de régimen de división horizontal
+3035,1021,Herencia,2022-03-11,Adjudicación por herencia

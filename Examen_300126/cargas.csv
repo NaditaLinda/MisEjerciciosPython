@@ -1,0 +1,31 @@
+﻿id_carga,id_finca,tipo_carga,descripcion,fecha_inscripcion
+2001,1001,Embargo,Embargo judicial Juzgado nº1,2021-10-21
+2002,1002,Embargo,Embargo Administrativo AEAT,2024-07-27
+2003,1003,Libre de cargas,Sin cargas vigentes en el registro,2024-05-18
+2004,1004,Hipoteca,Hipoteca BBVA,2020-09-16
+2005,1005,Embargo,Embargo judicial Juzgado nº1,2019-09-18
+2006,1006,Servidumbre,Servidumbre de vistas,2022-01-04
+2007,1007,Servidumbre,Servidumbre de paso,2023-10-09
+2008,1008,Libre de cargas,Sin cargas vigentes en el registro,2025-10-13
+2009,1009,Servidumbre,Servidumbre de paso,2018-08-30
+2010,1010,Hipoteca,Hipoteca Santander,2022-01-06
+2011,1011,Libre de cargas,Sin cargas vigentes en el registro,2022-02-27
+2012,1012,Hipoteca,Hipoteca Banco Galicia,2024-09-21
+2013,1013,Afección Fiscal,Pendiente de liquidación ITP,2018-01-24
+2014,1014,Afección Fiscal,Pendiente de liquidación ITP,2024-12-14
+2015,1015,Servidumbre,Servidumbre de vistas,2024-05-16
+2016,1016,Embargo,Embargo judicial Juzgado nº1,2022-06-01
+2017,1017,Libre de cargas,Sin cargas vigentes en el registro,2020-05-08
+2018,1018,Hipoteca,Hipoteca BBVA,2023-04-02
+2019,1019,Libre de cargas,Sin cargas vigentes en el registro,2024-01-17
+2020,1020,Hipoteca,Hipoteca BBVA,2021-10-03
+2021,1021,Hipoteca,Hipoteca BBVA,2018-10-08
+2022,1022,Servidumbre,Servidumbre de paso,2018-01-14
+2023,1023,Embargo,Embargo judicial Juzgado nº1,2018-11-12
+2024,1024,Afección Fiscal,Garantía de pago de impuestos,2018-10-01
+2025,1025,Servidumbre,Servidumbre de paso,2024-05-29
+2026,1026,Libre de cargas,Sin cargas vigentes en el registro,2019-08-21
+2027,1027,Embargo,Embargo Administrativo AEAT,2019-04-01
+2028,1028,Hipoteca,Hipoteca BBVA,2019-05-02
+2029,1029,Afección Fiscal,Pendiente de liquidación ITP,2022-10-04
+2030,1030,Afección Fiscal,Pendiente de liquidación ITP,2020-02-06
