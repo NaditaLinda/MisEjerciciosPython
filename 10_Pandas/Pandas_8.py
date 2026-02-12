@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 from datetime import datetime
 
-# --- 1. PREPARACIÓN Y LIMPIEZA DE DATOS ---
+# --- PREPARACIÓN Y LIMPIEZA DE DATOS ---
 
 # Generar un DataFrame con los datos de los cuatro ficheros
 ficheros = ['emisiones-2016.csv', 'emisiones-2017.csv', 'emisiones-2018.csv', 'emisiones-2019.csv']
@@ -31,12 +31,12 @@ df['FECHA'] = pd.to_datetime(df[['ANO', 'MES', 'DIA']].rename(columns={'ANO': 'y
 df = df[df['FECHA'].notna()]
 df = df.sort_values(['ESTACION', 'FECHA'])
 
-# --- 2. INFORMACIÓN GENERAL ---
+# --- INFORMACIÓN GENERAL ---
 
 print("Estaciones disponibles:", df['ESTACION'].unique())
 print("Contaminantes disponibles:", df['MAGNITUD'].unique())
 
-# --- 3. FUNCIONES DE ANÁLISIS ---
+# --- FUNCIONES DE ANÁLISIS ---
 
 def emisiones_rango(estacion, contaminante, fecha_inicio, fecha_fin):
     #Devuelve las emisiones de un contaminante en una estación y rango de fechas.
@@ -58,7 +58,7 @@ def medias_mensuales_estacion(estacion):
     #DataFrame con medias mensuales de todos los contaminantes en una estación.
     return df[df['ESTACION'] == estacion].groupby(['MES', 'MAGNITUD'])['VALOR'].mean().unstack()
 
-# --- 4. RESÚMENES DESCRIPTIVOS ---
+# --- RESÚMENES DESCRIPTIVOS ---
 
 # Resumen general por contaminante
 print("\n--- Resumen descriptivo por contaminante ---")
