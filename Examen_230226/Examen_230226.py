@@ -1,4 +1,6 @@
 from abc import ABC, abstractmethod
+import json
+import os
 
 # 1. CLASES BASE (Abstractas)
 class Personaje(ABC):
@@ -82,31 +84,75 @@ class Juego:
         self.jugadores = []
         self.mapas = []
 
-    def registrar_jugador(self, nuevo_jugador):
-        # Validación de nombre duplicado
+    def registrar_jugador(self, nuevo_jugador: Jugador):
+        """Verifica si el nombre ya existe antes de añadirlo."""
         nombres = [j._nombre.lower() for j in self.jugadores]
         if nuevo_jugador._nombre.lower() in nombres:
-            print(f"Error: El nombre {nuevo_jugador._nombre} ya existe.")
+            print(f"❌ Error: El nombre '{nuevo_jugador._nombre}' ya existe.")
             return False
+        
         self.jugadores.append(nuevo_jugador)
         return True
+
+    def guardar_jugadores(self, nombre_archivo="jugadores.json"):
+        """Convierte objetos Jugador a JSON y los guarda en disco."""
+        datos_a_guardar = []
+        for j in self.jugadores:
+            datos_a_guardar.append({
+                "id": j._id,
+                "nombre": j._nombre,
+                "nivel": j._nivel,
+                "vida": j._vida,
+                "experiencia": j.experiencia
+            })
+
+        try:
+            with open(nombre_archivo, "w", encoding="utf-8") as archivo:
+                json.dump(datos_a_guardar, archivo, indent=4)
+            print(f"💾 Datos guardados correctamente en {nombre_archivo}")
+        except Exception as e:
+            print(f"⚠️ Error al guardar: {e}")
+
+    def cargar_jugadores(self, nombre_archivo="jugadores.json"):
+        """Lee el archivo JSON y reconstruye los objetos Jugador (Instanciación)."""
+        if not os.path.exists(nombre_archivo):
+            print("ℹ️ No se encontró archivo de guardado previo.")
+            return
+
+        try:
+            with open(nombre_archivo, "r", encoding="utf-8") as archivo:
+                datos_cargados = json.load(archivo)
+            
+            # Limpiamos la lista actual para cargar la del archivo
+            self.jugadores = []
+            
+            for d in datos_cargados:
+                # Reconstruimos el objeto (Instanciación)
+                nuevo = Jugador(d["id"], d["nombre"], d["nivel"], d["vida"])
+                nuevo.experiencia = d["experiencia"]
+                self.jugadores.append(nuevo)
+                
+            print(f"📂 Se han cargado {len(self.jugadores)} jugadores desde el archivo.")
+        except Exception as e:
+            print(f"⚠️ Error al cargar los datos: {e}")
 
     def iniciar_juego(self):
         print("--- BIENVENIDO A REINOS DE PROGRAMARIA ---")
 
 # 5. PROGRAMA PRINCIPAL (Simulación)
 if __name__ == "__main__":
-    rpg = Juego()
+    mi_rpg = Juego()
     
-    # Intento de registro
-    p1 = Jugador(1, "Brais", 1, 100)
-    p2 = Jugador(2, "Brais", 1, 100) # Duplicado
+    # 1. Intentamos cargar datos previos
+    mi_rpg.cargar_jugadores()
     
-    if rpg.registrar_jugador(p1):
-        print("Jugador 1 registrado.")
-    if not rpg.registrar_jugador(p2):
-        print("Jugador 2 rechazado por nombre duplicado.")
-
-    # Simular Misión
-    mision_inicio = Mision("Derrotar al primer slime", 50)
-    mision_inicio.completar(p1)
+    # 2. Si no hay jugadores, creamos uno nuevo
+    if not mi_rpg.jugadores:
+        p_nuevo = Jugador(1, "MoureDev", 1, 100.0)
+        mi_rpg.registrar_jugador(p_nuevo)
+        # Guardamos para la próxima vez
+        mi_rpg.guardar_jugadores()
+    
+    # 3. Mostrar el estado actual
+    for p in mi_rpg.jugadores:
+        print(p)
