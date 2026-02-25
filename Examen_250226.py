@@ -160,3 +160,4 @@ if __name__ == "__main__":
     # 3. Mostrar el estado actual
     for p in mi_rpg.jugadores:
         print(p)
+
