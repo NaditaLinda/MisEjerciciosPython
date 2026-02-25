@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "nombre": "Brais",
+        "clase": "Guerrero",
+        "nivel": 5,
+        "vida": 120
+    },
+    {
+        "id": 2,
+        "nombre": "Maira",
+        "clase": "Mago",
+        "nivel": 5,
+        "vida": 80
+    }
+]
