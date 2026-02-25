@@ -115,10 +115,54 @@ class Armadura(Equipable):
         personaje._defensa -= self.bono_defensa
         print(f"❌ {self.nombre} desequipada.")
 
+# Clase base para todos los estados
+class Estado(ABC):
+    def __init__(self, nombre, duracion):
+        self.nombre = nombre
+        self.duracion = duracion
+
+    @abstractmethod
+    def aplicar_efecto(self, personaje):
+        """Define qué le pasa al personaje cada turno."""
+        pass
+
+    def reducir_turno(self):
+        """Resta un turno de duración."""
+        self.duracion -= 1
+        return self.duracion <= 0  # Devuelve True si el estado debe eliminarse
+
+# --- Subclases Concretas ---
+
+class Envenenado(Estado):
+    def __init__(self, duracion=3, daño_veneno=10):
+        super().__init__("Envenenado", duracion)
+        self.daño_veneno = daño_veneno
+
+    def aplicar_efecto(self, personaje):
+        print(f"🤢 {personaje._nombre} sufre {self.daño_veneno} de daño por veneno.")
+        personaje.recibir_danio(self.daño_veneno)
+
+class Paralizado(Estado):
+    def __init__(self, duracion=2):
+        super().__init__("Paralizado", duracion)
+
+    def aplicar_efecto(self, personaje):
+        # Aquí podrías reducir su ataque o velocidad temporalmente
+        print(f"⚡ {personaje._nombre} está paralizado y no puede moverse bien.")
+        personaje._ataque_base -= 5  # Ejemplo: resta ataque mientras dura
+
+class Somnoliento(Estado):
+    def __init__(self, duracion=1):
+        super().__init__("Somnoliento", duracion)
+
+    def aplicar_efecto(self, personaje):
+        print(f"😴 {personaje._nombre} tiene mucho sueño...")
+        # Lógica: al siguiente turno podría pasar a estado "Dormido"
+
 # --- 2. CLASES BASE DE PERSONAJE ---
 
 class Personaje(ABC):
-    def __init__(self, id_p, nombre, nivel, vida_max, mana_max):
+    def __init__(self, id_p, nombre, nivel, vida_max, mana_max, ataque_inicial):
         self._id = id_p
         self._nombre = nombre
         self._nivel = nivel
@@ -132,15 +176,25 @@ class Personaje(ABC):
         self._defensa = 0
         self._arma_equipada = None
         self._armadura_equipada = None
+        self._habilidades = []
 
     def aplicar_estados(self):
-        for estado in self.estados[:]:
-            if estado.danio_por_turno > 0:
-                print(f"🔥 {self._nombre} sufre {estado.danio_por_turno} por {estado.nombre}")
-                self.recibir_danio(estado.danio_por_turno)
-            estado.duracion -= 1
-            if estado.duracion <= 0:
+        """Actualiza y aplica los efectos de todos los estados activos."""
+        for estado in self.estados[:]:  # Usamos [:] para copiar la lista y evitar errores al eliminar
+            # 1. Aplicamos el efecto polimórfico
+            estado.aplicar_efecto(self)
+            
+            # 2. Reducimos el turno y comprobamos si ha terminado
+            se_acabo = estado.reducir_turno()
+            
+            if se_acabo:
+                print(f"✨ El estado {estado.nombre} de {self._nombre} ha desaparecido.")
                 self.estados.remove(estado)
+
+    def añadir_estado(self, nuevo_estado):
+        """Añade un nuevo estado a la lista del personaje."""
+        self.estados.append(nuevo_estado)
+        print(f"⚠️ {self._nombre} ahora está {nuevo_estado.nombre}!")
 
     def equipar_arma(self, nueva_arma):
             if self._arma_equipada:
@@ -177,39 +231,58 @@ class Personaje(ABC):
             habilidad.usar(self, objetivo)
 
     @abstractmethod
-    def atacar(self, objetivo): pass
+
+    def ejecutar_danio_fisico(self, objetivo):
+        """Este método lo implementarán las subclases (Guerrero, Mago, etc.)"""
+        pass
+
+    def atacar(self, objetivo):
+        # 1. Verificación de Estados que impiden atacar
+        for estado in self.estados:
+            if estado.nombre == "Paralizado":
+                print(f"⚡ {self._nombre} está paralizado y no puede moverse!")
+                return # Corta la ejecución: no ataca
+            
+            if estado.nombre == "Somnoliento":
+                print(f"😴 {self._nombre} está demasiado cansado para atacar con fuerza...")
+                # Aquí podrías dejarlo atacar con daño reducido o simplemente saltar turno
+                return
+
+        # 2. Si no hay estados que lo impidan, procede al ataque
+        self.ejecutar_danio_fisico(objetivo)
 
     def __str__(self):
-        return f"{self._nombre} ({self.__class__.__name__}) - Niv: {self._nivel} | HP: {self._vida_actual}/{self._vida_max}"
+        # Añadimos los estados al __str__ para que los veas en el combate
+        status = f" | Estados: {[e.nombre for e in self.estados]}" if self.estados else ""
+        return f"{self._nombre} ({self.__class__.__name__}) - Niv: {self._nivel} | HP: {self._vida_actual}/{self._vida_max}{status}"
 
 # --- 3. TIPOS DE PERSONAJE (Herencia y Polimorfismo) ---
 
 class Guerrero(Personaje):
-    def __init__(self, id_p, nom, niv, vid_max, mana_max):
-        # Pasamos los 5 parámetros al __init__ de Personaje
-        super().__init__(id_p, nom, niv, vid_max, mana_max)
+    def __init__(self, id_p, nom, niv, vid_max, mana_max, ataque):
+        # En lugar de poner 15 fijo, usa la variable 'ataque' que recibe la función
+        super().__init__(id_p, nom, niv, vid_max, mana_max, ataque)
 
-    def atacar(self, objetivo):
-        danio = 15 + (self._nivel * 3)
+    def ejecutar_danio_fisico(self, objetivo):
+        danio = self._ataque_base
         print(f"⚔️ {self._nombre} lanza un tajo potente a {objetivo._nombre}!")
         objetivo.recibir_danio(danio)
 
 class Mago(Personaje):
-    def __init__(self, id_p, nom, niv, vid_max, mana_max=150): # Valor por defecto
-        super().__init__(id_p, nom, niv, vid_max, mana_max)
+    def __init__(self, id_p, nom, niv, vid_max, mana_max=150, ataque=20): # Valor por defecto
+        super().__init__(id_p, nom, niv, vid_max, mana_max, ataque)
 
-    def atacar(self, objetivo):
-        # Ataque básico que no consume maná (o consume poco)
-        danio = 10 + (self._nivel * 5)
-        quemadura = EstadoAlterado("Quemadura", 2, 5)
-        objetivo.estados.append(quemadura)
-        print(f"🔥 {self._nombre} lanza una bola de fuego a {objetivo._nombre}!")
+    def ejecutar_danio_fisico(self, objetivo):
+        # El mago suele tener poco ataque físico, 
+        # pero usamos su _ataque_base (potenciado por equipo si lo tiene)
+        danio = self._ataque_base
+        print(f"🧙 {self._nombre} golpea débilmente con su bastón a {objetivo._nombre}!")
         objetivo.recibir_danio(danio)
 
 class NPC(Personaje):
     def __init__(self, id_p, nombre, dialogo):
-        # Un NPC suele tener vida pero no nivel de combate activo
-        super().__init__(id_p, nombre, 1, 100, 0)
+        # Añadimos un '0' al final porque un NPC no tiene ataque base
+        super().__init__(id_p, nombre, 1, 100, 0, 0) 
         self.dialogo = dialogo
 
     def hablar(self):
@@ -253,7 +326,7 @@ class Juego:
             for d in datos:
                 clase_ref = clase_map.get(d["clase"], Guerrero)
                 # AHORA PASAMOS 5 ARGUMENTOS: id, nombre, nivel, vida_max, mana_max
-                p = clase_ref(d["id"], d["nombre"], d["nivel"], 100, 50) 
+                p = clase_ref(d["id"], d["nombre"], d["nivel"], 100, 50, d.get("ataque", 15)) # Vida y maná máximos por defecto
                 p._vida_actual = d["vida"]
                 p._mana_actual = d.get("mana", 50) # Recuperamos el maná guardado
                 self.jugadores.append(p)
@@ -268,17 +341,41 @@ class CombatePro:
 
     def iniciar(self):
         print(f"\n--- INICIO DEL COMBATE: {self.j1._nombre} vs {self.e1._nombre} ---")
+        
         while self.j1.esta_vivo() and self.e1.esta_vivo():
-            self.j1.aplicar_states = self.j1.aplicar_estados() # Procesar venenos/fuego
+            # 1. PROCESAR ESTADOS (Venenos, parálisis, etc.)
+            # Corregimos la sintaxis: simplemente llamamos al método
+            print(f"\n--- Turno de {self.j1._nombre} ---")
+            self.j1.aplicar_estados()
             self.e1.aplicar_estados()
             
+            # 2. VERIFICACIÓN TRAS ESTADOS
+            # Si alguien muere por veneno aquí, el bucle termina
+            if not self.j1.esta_vivo() or not self.e1.esta_vivo():
+                break
+
+            # 3. ACCIÓN JUGADOR 1
             if self.j1.esta_vivo():
+                # Aquí podrías preguntar si quiere usar Habilidad o Atacar
                 self.j1.atacar(self.e1)
             
+            # 4. VERIFICACIÓN TRAS ATAQUE J1
+            if not self.e1.esta_vivo():
+                break
+            
+            # 5. ACCIÓN ENEMIGO 1
             if self.e1.esta_vivo():
                 self.e1.atacar(self.j1)
             
-            print(f"  > {self.j1}\n  > {self.e1}\n")
+            # 6. MOSTRAR RESUMEN DEL TURNO
+            print(f"   > {self.j1}")
+            print(f"   > {self.e1}\n")
+
+        # 7. RESULTADO FINAL
+        if self.j1.esta_vivo():
+            print(f"🏆 ¡{self.j1._nombre} ha ganado!")
+        else:
+            print(f"💀 {self.j1._nombre} ha sido derrotado...")
 
 # --- 6. PROGRAMA PRINCIPAL ---
 

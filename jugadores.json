@@ -4,6 +4,8 @@
         "nombre": "Brais",
         "nivel": 1,
         "vida": 100,
+        "mana": 50,
+        "ataque": 15,
         "experiencia": 0
     }
 ]

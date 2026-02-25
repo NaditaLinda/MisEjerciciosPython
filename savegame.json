@@ -4,13 +4,17 @@
         "nombre": "Brais",
         "clase": "Guerrero",
         "nivel": 5,
-        "vida": 120
+        "vida": 120,
+        "mana": 50,
+        "ataque": 15
     },
     {
         "id": 2,
         "nombre": "Maira",
         "clase": "Mago",
         "nivel": 5,
-        "vida": 80
+        "vida": 80,
+        "mana": 150,
+        "ataque": 20
     }
 ]
