@@ -463,46 +463,80 @@ MUNDO = {
     "Nivel 10": ["Dimensión del Vacío Absoluto Final", "Reino de la Oscuridad Eterna Suprema Infinita", "Infierno de Hielo Infinito Absoluto", "Cielo de las Almas Perdidas Eternas Finales", "Abismo de la Desesperación Final Absoluto", "Mundo Espectral Inmortal Supremo", "Planeta de las Pesadillas Eternas Finales", "Realidad Fragmentada Absoluta Infinita", "Universo Alternativo Infinito Absoluto", "Nexus del Infinito Supremo Final"] 
 }
 
+class EventoMundo:
+    def __init__(self):
+        # Diccionario de preguntas: {Pregunta: Respuesta_Correcta}
+        self.preguntas = {
+            "¿Cuál es el lenguaje de programación más usado en IA?": "python",
+            "¿Qué planeta es conocido como el Planeta Rojo?": "marte",
+            "¿Quién escribió 'El Quijote'?": "cervantes",
+            "¿Cuál es el símbolo químico del oro?": "au"
+        }
+        self.recompensas = ["ataque", "mana", "habilidad", "vida"]
+
+    def lanzar_desafio(self, personaje):
+        pregunta, respuesta = random.choice(list(self.preguntas.items()))
+        print(f"\n🧩 DESAFÍO DEL GUARDIÁN: {pregunta}")
+        usuario_resp = input("Tu respuesta: ").lower()
+
+        if usuario_resp == respuesta:
+            recompensa = random.choice(self.recompensas)
+            self.aplicar_recompensa(personaje, recompensa)
+            return True
+        else:
+            print("❌ Respuesta incorrecta. No hay bonificación para este combate.")
+            return False
+
+    def aplicar_recompensa(self, personaje, tipo):
+        if tipo == "ataque":
+            personaje._ataque_base += 10
+            print(f"✨ ¡Poder aumentado! +10 de Ataque (Total: {personaje._ataque_base})")
+        elif tipo == "mana":
+            personaje._mana_max += 20
+            personaje._mana_actual = personaje._mana_max
+            print(f"✨ ¡Maná aumentado! +20 de Maná")
+        elif tipo == "vida":
+            personaje._vida_max += 30
+            personaje._vida_actual = personaje._vida_max
+            print(f"✨ ¡Vida máxima aumentada! +30 de HP")
+
 if __name__ == "__main__":
     mi_rpg = Juego()
-    mi_rpg.cargar_partida()
+    evento = EventoMundo()
     
-    # 1. SELECCIÓN DE PERSONAJE
-    print("--- BIENVENIDO AL MUNDO DE ALMA-IA ---")
-    if not mi_rpg.jugadores:
-        print("Elige tu clase:")
-        print("1. Guerrero (Brais) - Alta vida y daño físico")
-        print("2. Mago (Maira) - Menos vida, pero gran poder mágico")
-        opcion = input("Selecciona (1 o 2): ")
-        
-        if opcion == "1":
-            jugador = Guerrero(1, "Brais", 1, 100, 50, 15)
-        else:
-            jugador = Mago(1, "Maira", 1, 80, 100, 5)
+    nivel_actual = 1
+    subnivel_actual = 1
+
+    print("--- ⚔️ BIENVENIDO A ALMA-IA: EL ASCENSO ⚔️ ---")
+    # (Aquí iría la selección de personaje que ya tenemos...)
+    jugador = Guerrero(1, "Brais", 1, 100, 50, 15) # Ejemplo rápido
+    
+    while nivel_actual <= 10:
+        while subnivel_actual <= 10:
+            nombre_zona = MUNDO[f"Nivel {nivel_actual}"][subnivel_actual-1]
+            print(f"\n📍 {nombre_zona} (Nivel {nivel_actual}.{subnivel_actual})")
+
+            # 1. Desafío de Cultura General
+            evento.lanzar_desafio(jugador)
+
+            # 2. Generar enemigo aleatorio del nivel
+            enemigo = Mago(99, f"Guardián de {nombre_zona}", nivel_actual, 50 + (nivel_actual*10), 30, 5 + nivel_actual)
             
-        mi_rpg.registrar_jugador(jugador)
-        # Creamos un enemigo base para el Nivel 1.1
-        enemigo = Mago(99, "Sombra del Valle", 1, 50, 30, 5)
-    else:
-        jugador = mi_rpg.jugadores[0]
-        enemigo = Mago(99, "Espectro Errante", jugador._nivel, 60, 40, 8)
+            # 3. Combate
+            pelea = CombatePro(jugador, enemigo)
+            resultado = pelea.iniciar() # Necesitaremos que .iniciar() devuelva "victoria", "derrota" o "empate"
 
-    # 2. LOCALIZACIÓN
-    # Ejemplo: Nivel 1, Subnivel 1
-    zona_actual = MUNDO["Nivel 1"][0]
-    print(f"\n📍 Te encuentras en: {zona_actual}")
-    
-    # Narración inicial
-    jugador.narrar("Siento una presencia oscura en esta zona...")
-
-    # 3. EQUIPO Y HABILIDADES (Lo que ya teníamos)
-    jugador.aprender_habilidad(bola_fuego)
-    jugador.equipar_arma(espada_hierro)
-
-    # 4. INICIAR COMBATE
-    pelea = CombatePro(jugador, enemigo)
-    pelea.iniciar()
-
-    # 5. GUARDAR
-    if input("\n¿Guardar progreso? (s/n): ").lower() == 's':
-        mi_rpg.guardar_partida()
+            # 4. Lógica de progresión
+            if "ganado" in resultado:
+                print("✅ ¡Avanzas al siguiente subnivel!")
+                subnivel_actual += 1
+            elif "empate" in resultado:
+                opcion = input("🤝 Empate. ¿Deseas (1) Pasar de nivel o (2) Repetir?: ")
+                if opcion == "1": subnivel_actual += 1
+            else:
+                print("❌ Has sido derrotado. Debes repetir el nivel.")
+                jugador._vida_actual = jugador._vida_max # Curar para repetir
+        
+        nivel_actual += 1
+        subnivel_actual = 1
+        print(f"🎊 ¡INCREÍBLE! Has superado el NIVEL {nivel_actual-1}")
