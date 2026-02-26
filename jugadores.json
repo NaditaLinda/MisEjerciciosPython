@@ -2,10 +2,19 @@
     {
         "id": 1,
         "nombre": "Brais",
+        "clase": "Guerrero",
         "nivel": 1,
         "vida": 100,
-        "mana": 50,
-        "ataque": 15,
-        "experiencia": 0
+        "mana": 100,
+        "ataque": 15
+    },
+      {
+        "id": 2,
+        "nombre": "Maira",
+        "clase": "Mago",
+        "nivel": 5,
+        "vida": 80,
+        "mana": 150,
+        "ataque": 20
     }
 ]

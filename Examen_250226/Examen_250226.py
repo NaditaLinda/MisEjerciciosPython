@@ -1,6 +1,7 @@
 import json
 import os
 from abc import ABC, abstractmethod
+import random
 
 # --- 1. SISTEMA DE APOYO Y ESTADOS ---
 
@@ -37,7 +38,7 @@ class HabilidadOfensiva(Habilidad):
         print(f"🔥 {ejecutor._nombre} lanza {self.nombre}!")
         objetivo.recibir_danio(self.potencia_danio)
 
-# 2. Subclase Curativa (Restaura HP)
+    # 2. Subclase Curativa (Restaura HP)
 class HabilidadCurativa(Habilidad):
     def __init__(self, nombre, costo_mana, potencia_cura):
         super().__init__(nombre, costo_mana)
@@ -48,7 +49,7 @@ class HabilidadCurativa(Habilidad):
         # Sanamos al objetivo (puede ser uno mismo)
         objetivo._vida_actual = min(objetivo._vida_max, objetivo._vida_actual + self.potencia_cura)
 
-# 3. Subclase Buff (Añade un estado beneficioso)
+    # 3. Subclase Buff (Añade un estado beneficioso)
 class HabilidadBuff(Habilidad):
     def __init__(self, nombre, costo_mana, estado):
         super().__init__(nombre, costo_mana)
@@ -73,9 +74,8 @@ class Pocion(Item):
         personaje._vida_actual = min(personaje._vida_max, personaje._vida_actual + 20)
         print(f"🧪 {personaje._nombre} usa {self.nombre} y recupera 20 HP.")
 
-from abc import ABC, abstractmethod
-
-# La Interface (Contrato)
+# La Interface Equipable define el contrato para cualquier objeto que pueda ser equipado
+# por un personaje
 class Equipable(ABC):
     @abstractmethod
     def equipar(self, personaje):
@@ -132,7 +132,6 @@ class Estado(ABC):
         return self.duracion <= 0  # Devuelve True si el estado debe eliminarse
 
 # --- Subclases Concretas ---
-
 class Envenenado(Estado):
     def __init__(self, duracion=3, daño_veneno=10):
         super().__init__("Envenenado", duracion)
@@ -147,9 +146,8 @@ class Paralizado(Estado):
         super().__init__("Paralizado", duracion)
 
     def aplicar_efecto(self, personaje):
-        # Aquí podrías reducir su ataque o velocidad temporalmente
         print(f"⚡ {personaje._nombre} está paralizado y no puede moverse bien.")
-        personaje._ataque_base -= 5  # Ejemplo: resta ataque mientras dura
+        personaje._ataque_base -= 5  
 
 class Somnoliento(Estado):
     def __init__(self, duracion=1):
@@ -157,7 +155,25 @@ class Somnoliento(Estado):
 
     def aplicar_efecto(self, personaje):
         print(f"😴 {personaje._nombre} tiene mucho sueño...")
-        # Lógica: al siguiente turno podría pasar a estado "Dormido"
+
+class EstadoAumentoAtaque(Estado):
+    def __init__(self, nombre, duracion, bono_ataque):
+        super().__init__(nombre, duracion)
+        self.bono_ataque = bono_ataque
+        self._aplicado = False # Para saber si ya sumamos el bono
+
+    def aplicar_efecto(self, personaje):
+        if not self._aplicado:
+            personaje._ataque_base += self.bono_ataque
+            self._aplicado = True
+            print(f"🔥 {personaje._nombre} aumenta su ataque en {self.bono_ataque} por {self.nombre}.")
+        else:
+            print(f"💪 {personaje._nombre} mantiene el aumento de {self.nombre}.")
+
+    def finalizar_efecto(self, personaje):
+        """Este método lo llamaremos desde aplicar_estados en Personaje"""
+        personaje._ataque_base -= self.bono_ataque
+        print(f"📉 El efecto de {self.nombre} ha terminado. El ataque de {personaje._nombre} vuelve a la normalidad.")
 
 # --- 2. CLASES BASE DE PERSONAJE ---
 
@@ -171,7 +187,6 @@ class Personaje(ABC):
         self._mana_max = mana_max
         self._mana_actual = mana_max
         self.estados = []
-
         self._ataque_base = ataque_inicial
         self._defensa = 0
         self._arma_equipada = None
@@ -180,14 +195,19 @@ class Personaje(ABC):
 
     def aplicar_estados(self):
         """Actualiza y aplica los efectos de todos los estados activos."""
-        for estado in self.estados[:]:  # Usamos [:] para copiar la lista y evitar errores al eliminar
-            # 1. Aplicamos el efecto polimórfico
+        for estado in self.estados[:]:
+            # 1. Aplicamos el efecto (daño de veneno o aviso de buff)
             estado.aplicar_efecto(self)
             
-            # 2. Reducimos el turno y comprobamos si ha terminado
+            # 2. Reducimos el turno
             se_acabo = estado.reducir_turno()
             
             if se_acabo:
+                # --- AQUÍ ESTÁ EL CAMBIO CLAVE ---
+                # Si el estado tiene un método para limpiar estadísticas, lo llamamos
+                if hasattr(estado, 'finalizar_efecto'):
+                    estado.finalizar_efecto(self)
+                
                 print(f"✨ El estado {estado.nombre} de {self._nombre} ha desaparecido.")
                 self.estados.remove(estado)
 
@@ -223,12 +243,29 @@ class Personaje(ABC):
         print(f"❌ {self._nombre} no tiene suficiente maná.")
         return False
     
-    def ejecutar_habilidad(self, habilidad, objetivo):
-        # Usamos tu método existente consumir_mana
-        if self.consumir_mana(habilidad.costo_mana):
-            # Aquí ocurre el Polimorfismo: no importa qué tipo de habilidad sea, 
-            # el método .usar() ejecutará la lógica correcta.
-            habilidad.usar(self, objetivo)
+    # Para que el personaje pueda aprender habilidades
+    def aprender_habilidad(self, nueva_habilidad):
+        self._habilidades.append(nueva_habilidad)
+        print(f"📖 {self._nombre} ha aprendido: {nueva_habilidad.nombre}")
+
+    # Método para usar una habilidad
+    def ejecutar_habilidad(self, indice, objetivo):
+        if 0 <= indice < len(self._habilidades):
+            habilidad = self._habilidades[indice]
+            
+            # Validación de seguridad: ¿Tiene maná suficiente?
+            if self._mana_actual >= habilidad.costo_mana:
+                # La habilidad se ejecuta y ella misma debería restar el maná en su método .usar()
+                habilidad.usar(self, objetivo)
+            else:
+                print(f"❌ {self._nombre} intentó usar {habilidad.nombre} pero no tiene maná suficiente ({self._mana_actual}/{habilidad.costo_mana})")
+        else:
+            print("❌ Habilidad no encontrada.")
+
+    def narrar(self, mensaje):
+        """Añade un toque narrativo a las acciones del personaje."""
+        prefix = f"[{self._nombre}]:"
+        print(f"💬 {prefix} {mensaje}")   
 
     @abstractmethod
 
@@ -241,26 +278,22 @@ class Personaje(ABC):
         for estado in self.estados:
             if estado.nombre == "Paralizado":
                 print(f"⚡ {self._nombre} está paralizado y no puede moverse!")
-                return # Corta la ejecución: no ataca
+                return 
             
             if estado.nombre == "Somnoliento":
                 print(f"😴 {self._nombre} está demasiado cansado para atacar con fuerza...")
-                # Aquí podrías dejarlo atacar con daño reducido o simplemente saltar turno
                 return
 
-        # 2. Si no hay estados que lo impidan, procede al ataque
+        # 2. Tras comprobación, procede al ataque
         self.ejecutar_danio_fisico(objetivo)
 
     def __str__(self):
-        # Añadimos los estados al __str__ para que los veas en el combate
-        status = f" | Estados: {[e.nombre for e in self.estados]}" if self.estados else ""
-        return f"{self._nombre} ({self.__class__.__name__}) - Niv: {self._nivel} | HP: {self._vida_actual}/{self._vida_max}{status}"
-
+        return f"{self._nombre} ({self.__class__.__name__}) - Niv: {self._nivel} | HP: {self._vida_actual}/{self._vida_max}"
+    
 # --- 3. TIPOS DE PERSONAJE (Herencia y Polimorfismo) ---
 
 class Guerrero(Personaje):
     def __init__(self, id_p, nom, niv, vid_max, mana_max, ataque):
-        # En lugar de poner 15 fijo, usa la variable 'ataque' que recibe la función
         super().__init__(id_p, nom, niv, vid_max, mana_max, ataque)
 
     def ejecutar_danio_fisico(self, objetivo):
@@ -269,7 +302,7 @@ class Guerrero(Personaje):
         objetivo.recibir_danio(danio)
 
 class Mago(Personaje):
-    def __init__(self, id_p, nom, niv, vid_max, mana_max=150, ataque=20): # Valor por defecto
+    def __init__(self, id_p, nom, niv, vid_max, mana_max=150, ataque=20): 
         super().__init__(id_p, nom, niv, vid_max, mana_max, ataque)
 
     def ejecutar_danio_fisico(self, objetivo):
@@ -344,28 +377,25 @@ class CombatePro:
         
         while self.j1.esta_vivo() and self.e1.esta_vivo():
             # 1. PROCESAR ESTADOS (Venenos, parálisis, etc.)
-            # Corregimos la sintaxis: simplemente llamamos al método
             print(f"\n--- Turno de {self.j1._nombre} ---")
             self.j1.aplicar_estados()
             self.e1.aplicar_estados()
             
             # 2. VERIFICACIÓN TRAS ESTADOS
-            # Si alguien muere por veneno aquí, el bucle termina
             if not self.j1.esta_vivo() or not self.e1.esta_vivo():
                 break
 
-            # 3. ACCIÓN JUGADOR 1
+            # 3. ACCIÓN JUGADOR 1 (Ahora con IA aleatoria)
             if self.j1.esta_vivo():
-                # Aquí podrías preguntar si quiere usar Habilidad o Atacar
-                self.j1.atacar(self.e1)
+                self.ejecutar_turno_logico(self.j1, self.e1)
             
             # 4. VERIFICACIÓN TRAS ATAQUE J1
             if not self.e1.esta_vivo():
                 break
             
-            # 5. ACCIÓN ENEMIGO 1
+            # 5. ACCIÓN ENEMIGO 1 (Ahora con IA aleatoria)
             if self.e1.esta_vivo():
-                self.e1.atacar(self.j1)
+                self.ejecutar_turno_logico(self.e1, self.j1)
             
             # 6. MOSTRAR RESUMEN DEL TURNO
             print(f"   > {self.j1}")
@@ -377,44 +407,102 @@ class CombatePro:
         else:
             print(f"💀 {self.j1._nombre} ha sido derrotado...")
 
-# --- 6. PROGRAMA PRINCIPAL ---
+    def ejecutar_turno_logico(self, atacante, defensor):
+        """Decide aleatoriamente entre ataque físico o habilidad."""
+        # Definimos probabilidad: 40% de usar habilidad si tiene maná
+        probabilidad_habilidad = 0.4
+        
+        if atacante._habilidades and random.random() < probabilidad_habilidad:
+            # Elegimos una habilidad al azar de su lista
+            habilidad = random.choice(atacante._habilidades)
+            
+            # Verificamos si tiene maná suficiente
+            if atacante._mana_actual >= habilidad.costo_mana:
+                # Usamos el método ejecutar_habilidad (que ya pusimos en Personaje)
+                indice = atacante._habilidades.index(habilidad)
+                atacante.ejecutar_habilidad(indice, defensor)
+                return # Finaliza el turno si usa habilidad con éxito
+
+        # Si no tiene habilidades, no tiene maná o falló la probabilidad: Ataque físico
+        atacante.atacar(defensor)
+
+# Esta es una implementación concreta que SÍ se puede instanciar
+class EstadoAumentoAtaque(Estado):
+    def __init__(self, nombre, duracion, bono_ataque):
+        super().__init__(nombre, duracion)
+        self.bono_ataque = bono_ataque
+
+    def aplicar_efecto(self, personaje):
+        # Aquí definimos qué hace el estado realmente
+        print(f"💪 {personaje._nombre} se siente más fuerte por {self.nombre} (+{self.bono_ataque} ATK)")
+        # Solo lo sumamos una vez o gestionamos la lógica según tu juego
+
+# --- INSTANCIAS DE JUEGO (Pon esto antes del bloque principal) ---
+
+# Habilidades
+bola_fuego = HabilidadOfensiva("Bola de Fuego", 15, 30)
+luz_sanadora = HabilidadCurativa("Luz Sanadora", 10, 25)
+estado_grito = EstadoAumentoAtaque("Fuerza", 3, 5)
+escudo_espinas = HabilidadBuff("Grito de Guerra", 5, estado_grito)
+
+# Equipo
+espada_hierro = Arma("Espada de Hierro", 10)
+túnica_mago = Armadura("Túnica Arcana", 5)
+
+# Estructura del Mundo
+MUNDO = {
+    "Nivel 1": ["Valle de los Susurros", "Cueva de los Lamentos", "Acantilado de los Gritos", "Bosque de Sombras", "Río de Olvido", "Pradera del Eco", "Gruta de Cristal", "Paso del Viento", "Llanura de Ceniza", "Torre del Vigía"],
+    "Nivel 2": ["Pantano de la Desesperación", "Ruinas de Otrora", "Mina de los Enanos", "Pico Helado", "Fortaleza del Caos", "Santuario Abandonado", "Desierto de Huesos", "Oasis del Espejismo", "Cañón del Trueno", "Portal del Abismo"],
+    "Nivel 3": ["Ciudadela de los Dragones", "Templo del Sol Eterno", "Bosque Encantado", "Caverna de los Ecos", "Isla de las Sombras", "Valle de la Luna", "Montaña del Destino", "Lago de los Suspiros", "Ruinas del Olvido", "Torre del Mago Supremo"],
+    "Nivel 4": ["Infierno de Fuego", "Cielo de los Ángeles", "Abismo de la Locura", "Reino de los Muertos", "Dimensión del Caos", "Mundo Espejo", "Planeta de las Bestias", "Realidad Alterna", "Universo Paralelo", "Nexus del Tiempo"],
+    "Nivel 5": ["Trono del Dragón", "Corona del Rey Demonio", "Sombra del Titán", "Corazón del Mundo", "Ojo del Apocalipsis", "Altar de los Dioses", "Cráter del Fin del Mundo", "Santuario de la Eternidad", "Caverna de los Secretos", "Torre de la Creación"],
+    "Nivel 6": ["Dimensión del Vacío", "Reino de la Oscuridad Eterna", "Infierno de Hielo", "Cielo de las Almas Perdidas", "Abismo de la Desesperación", "Mundo Espectral", "Planeta de las Pesadillas", "Realidad Fragmentada", "Universo Alternativo", "Nexus del Infinito"],
+    "Nivel 7": ["Trono del Dragón Ancestral", "Corona del Rey Demonio Supremo", "Sombra del Titán Primordial", "Corazón del Mundo Eterno", "Ojo del Apocalipsis Final", "Altar de los Dioses Antiguos", "Cráter del Fin de los Tiempos", "Santuario de la Eternidad Absoluta", "Caverna de los Secretos Prohibidos", "Torre de la Creación Divina"],
+    "Nivel 8": ["Dimensión del Vacío Absoluto", "Reino de la Oscuridad Eterna Suprema", "Infierno de Hielo Infinito", "Cielo de las Almas Perdidas Eternas", "Abismo de la Desesperación Final", "Mundo Espectral Inmortal", "Planeta de las Pesadillas Eternas", "Realidad Fragmentada Absoluta", "Universo Alternativo Infinito", "Nexus del Infinito Supremo"],
+    "Nivel 9": ["Trono del Dragón Ancestral Supremo", "Corona del Rey Demonio Final", "Sombra del Titán Primordial Absoluto", "Corazón del Mundo Eterno Infinito", "Ojo del Apocalipsis Final Absoluto", "Altar de los Dioses Antiguos Eternos", "Cráter del Fin de los Tiempos Final", "Santuario de la Eternidad Absoluta Infinita", "Caverna de los Secretos Prohibidos Eternos", "Torre de la Creación Divina Suprema"],
+    "Nivel 10": ["Dimensión del Vacío Absoluto Final", "Reino de la Oscuridad Eterna Suprema Infinita", "Infierno de Hielo Infinito Absoluto", "Cielo de las Almas Perdidas Eternas Finales", "Abismo de la Desesperación Final Absoluto", "Mundo Espectral Inmortal Supremo", "Planeta de las Pesadillas Eternas Finales", "Realidad Fragmentada Absoluta Infinita", "Universo Alternativo Infinito Absoluto", "Nexus del Infinito Supremo Final"] 
+}
 
 if __name__ == "__main__":
     mi_rpg = Juego()
-    
-    # Intentar cargar
     mi_rpg.cargar_partida()
     
-    # Si está vacío, creamos personajes iniciales
+    # 1. SELECCIÓN DE PERSONAJE
+    print("--- BIENVENIDO AL MUNDO DE ALMA-IA ---")
     if not mi_rpg.jugadores:
-        g = Guerrero(1, "Brais", 5, 120, 20) 
-        m = Mago(2, "Maira", 5, 80, 100)
+        print("Elige tu clase:")
+        print("1. Guerrero (Brais) - Alta vida y daño físico")
+        print("2. Mago (Maira) - Menos vida, pero gran poder mágico")
+        opcion = input("Selecciona (1 o 2): ")
         
-        mi_rpg.registrar_jugador(g)
-        mi_rpg.registrar_jugador(m)
+        if opcion == "1":
+            jugador = Guerrero(1, "Brais", 1, 100, 50, 15)
+        else:
+            jugador = Mago(1, "Maira", 1, 80, 100, 5)
+            
+        mi_rpg.registrar_jugador(jugador)
+        # Creamos un enemigo base para el Nivel 1.1
+        enemigo = Mago(99, "Sombra del Valle", 1, 50, 30, 5)
+    else:
+        jugador = mi_rpg.jugadores[0]
+        enemigo = Mago(99, "Espectro Errante", jugador._nivel, 60, 40, 8)
+
+    # 2. LOCALIZACIÓN
+    # Ejemplo: Nivel 1, Subnivel 1
+    zona_actual = MUNDO["Nivel 1"][0]
+    print(f"\n📍 Te encuentras en: {zona_actual}")
+    
+    # Narración inicial
+    jugador.narrar("Siento una presencia oscura en esta zona...")
+
+    # 3. EQUIPO Y HABILIDADES (Lo que ya teníamos)
+    jugador.aprender_habilidad(bola_fuego)
+    jugador.equipar_arma(espada_hierro)
+
+    # 4. INICIAR COMBATE
+    pelea = CombatePro(jugador, enemigo)
+    pelea.iniciar()
+
+    # 5. GUARDAR
+    if input("\n¿Guardar progreso? (s/n): ").lower() == 's':
         mi_rpg.guardar_partida()
-
-    # Simular un combate entre los dos jugadores cargados
-    if len(mi_rpg.jugadores) >= 2:
-        pelea = CombatePro(mi_rpg.jugadores[0], mi_rpg.jugadores[1])
-        pelea.iniciar()
-
-# --- 1. Creamos una Habilidad Ofensiva ---
-# Nombre: "Bola de Fuego", Costo: 15 MP, Daño: 30
-bola_fuego = HabilidadOfensiva("Bola de Fuego", 15, 30)
-
-# --- 2. Creamos una Habilidad Curativa ---
-# Nombre: "Luz Sanadora", Costo: 10 MP, Curación: 25
-luz_sanadora = HabilidadCurativa("Luz Sanadora", 10, 25)
-
-# --- 3. Creamos una Habilidad de Buff (Necesita un objeto Estado) ---
-# Primero definimos un pequeño objeto Estado como los que ya usa tu clase Personaje
-class Estado:
-    def __init__(self, nombre, duracion, danio_por_turno):
-        self.nombre = nombre
-        self.duracion = duracion
-        self.danio_por_turno = danio_por_turno
-
-# Nombre: "Escudo de Espinas", Costo: 5 MP
-# Este buff aplicará un estado que (por ahora) no hace daño pero dura 3 turnos
-escudo_espinas = HabilidadBuff("Escudo de Espinas", 5, Estado("Protección", 3, 0))
