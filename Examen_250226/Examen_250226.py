@@ -414,7 +414,8 @@ class CombatePro:
             print(f"   > {self.j1}")
             print(f"   > {self.e1}\n")
 
-        # 7. RESULTADO FINAL
+        # ... (código del bucle de combate)
+
         # 7. RESULTADO FINAL (Usando Enums)
         if self.j1.esta_vivo():
             print(f"🏆 ¡{self.j1._nombre} ha ganado!")
