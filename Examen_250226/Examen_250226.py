@@ -532,43 +532,68 @@ class Preguntero:
 
 if __name__ == "__main__":
     mi_rpg = Juego()
-    evento = Preguntero()
+    # Asegúrate de que el nombre de la clase coincida (Preguntero o PregunteroTrivia)
+    evento = Preguntero() 
     
     nivel_actual = 1
     subnivel_actual = 1
 
     print("--- ⚔️ BIENVENIDO A ALMA-IA: EL ASCENSO ⚔️ ---")
-    # (Aquí iría la selección de personaje que ya tenemos...)
-    jugador = Guerrero(1, "Brais", 1, 100, 50, 15) # Ejemplo rápido
     
+    # 1. SELECCIÓN INICIAL (Brais como ejemplo)
+    jugador = Guerrero(1, "Brais", 1, 100, 50, 15)
+    jugador.aprender_habilidad(bola_fuego)
+
     while nivel_actual <= 10:
         while subnivel_actual <= 10:
+            # Obtenemos el nombre de la zona desde tu diccionario MUNDO
             nombre_zona = MUNDO[f"Nivel {nivel_actual}"][subnivel_actual-1]
             print(f"\n📍 {nombre_zona} (Nivel {nivel_actual}.{subnivel_actual})")
 
-            # 1. Desafío de Cultura General
+            # 2. DESAFÍO DE CULTURA GENERAL
+            # Si acierta, Brais ganará stats antes de pelear
             evento.lanzar_desafio(jugador)
 
-            # 2. Generar enemigo aleatorio del nivel
-            enemigo = Mago(99, f"Guardián de {nombre_zona}", nivel_actual, 50 + (nivel_actual*10), 30, 5 + nivel_actual)
+            # 3. GENERAR ENEMIGO CON DIFICULTAD ESCALADA (CAMBIO CLAVE)
+            # Aumentamos la base de vida y ataque usando el subnivel como multiplicador
+            vida_e = 50 + (nivel_actual * 20) + (subnivel_actual * 8)
+            ataque_e = 8 + (nivel_actual * 3) + subnivel_actual
             
-            # 3. Combate
+            # Instanciamos al enemigo con estas nuevas variables
+            enemigo = Mago(99, f"Guardián de {nombre_zona}", nivel_actual, vida_e, 40, ataque_e)
+            
+            # 4. COMBATE
             pelea = CombatePro(jugador, enemigo)
-            resultado = pelea.iniciar() # Necesitaremos que .iniciar() devuelva "victoria", "derrota" o "empate"
+            resultado = pelea.iniciar()
 
-            # 4. Lógica de progresión
-            if "ganado" in resultado:
-                print("✅ ¡Avanzas al siguiente subnivel!")
+            # 5. LÓGICA DE PROGRESIÓN Y BALANCEO
+            if resultado == ResultadoCombate.VICTORIA:
+                print(f"✅ ¡Excelente! Has superado el tramo {subnivel_actual}.")
                 subnivel_actual += 1
-            elif "empate" in resultado:
-                opcion = input("🤝 Empate. ¿Deseas (1) Pasar de nivel o (2) Repetir?: ")
-                if opcion == "1": subnivel_actual += 1
-            else:
-                print("❌ Has sido derrotado. Debes repetir el nivel.")
-                jugador._vida_actual = jugador._vida_max # Curar para repetir
+                
+                # BALANCEO: En lugar de restaurar todo, damos una cura parcial (20%)
+                # Esto obliga a no fallar las preguntas para no morir por desgaste.
+                cura = int(jugador._vida_max * 0.2)
+                jugador._vida_actual = min(jugador._vida_max, jugador._vida_actual + cura)
+                print(f"🩹 Descansas brevemente. Recuperas {cura} HP.")
+            
+            elif resultado == ResultadoCombate.EMPATE:
+                print("🤝 Habéis empatado.")
+                decision = input("¿Deseas (1) Avanzar al siguiente tramo o (2) Repetir?: ")
+                if decision == "1":
+                    subnivel_actual += 1
+                # En empate o derrota sí restauramos para que pueda seguir jugando
+                jugador.restaurar_salud_y_mana()
+            
+            elif resultado == ResultadoCombate.DERROTA:
+                print("❌ Has sido derrotado. Debes repetir este tramo.")
+                jugador.restaurar_salud_y_mana()
         
+        # Al salir de los 10 subniveles, subimos de nivel de mundo
+        print(f"\n🎊 ¡INCREÍBLE! Has superado el NIVEL {nivel_actual}")
         nivel_actual += 1
         subnivel_actual = 1
-        print(f"🎊 ¡INCREÍBLE! Has superado el NIVEL {nivel_actual-1}")
+        # Al cambiar de mundo, sí damos un descanso total
+        jugador.restaurar_salud_y_mana()
 
   
