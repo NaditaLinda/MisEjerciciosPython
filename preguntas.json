@@ -1,0 +1,5002 @@
+[
+    {
+        "pregunta": "¿Qué lenguaje creó Guido van Rossum?",
+        "respuesta": "python",
+        "tema": "Programación"
+    },
+    {
+        "pregunta": "¿Cuál es la capital de Francia?",
+        "respuesta": "paris",
+        "tema": "Geografía"
+    },
+    {
+        "pregunta": "¿En qué año se lanzó el primer iPhone?",
+        "respuesta": "2007",
+        "tema": "Tecnología"
+    },
+    {
+        "pregunta": "¿Cuál es el símbolo químico del Oro?",
+        "respuesta": "au",
+        "tema": "Ciencia"
+    },
+    {
+        "pregunta": "¿Quién pintó la Mona Lisa?",
+        "respuesta": "da vinci",
+        "tema": "Arte"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 1 + 5?",
+        "respuesta": "6",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 2 + 5?",
+        "respuesta": "7",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 3 + 5?",
+        "respuesta": "8",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 4 + 5?",
+        "respuesta": "9",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 5 + 5?",
+        "respuesta": "10",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 6 + 5?",
+        "respuesta": "11",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 7 + 5?",
+        "respuesta": "12",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 8 + 5?",
+        "respuesta": "13",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 9 + 5?",
+        "respuesta": "14",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 10 + 5?",
+        "respuesta": "15",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 11 + 5?",
+        "respuesta": "16",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 12 + 5?",
+        "respuesta": "17",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 13 + 5?",
+        "respuesta": "18",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 14 + 5?",
+        "respuesta": "19",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 15 + 5?",
+        "respuesta": "20",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 16 + 5?",
+        "respuesta": "21",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 17 + 5?",
+        "respuesta": "22",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 18 + 5?",
+        "respuesta": "23",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 19 + 5?",
+        "respuesta": "24",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 20 + 5?",
+        "respuesta": "25",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 21 + 5?",
+        "respuesta": "26",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 22 + 5?",
+        "respuesta": "27",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 23 + 5?",
+        "respuesta": "28",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 24 + 5?",
+        "respuesta": "29",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 25 + 5?",
+        "respuesta": "30",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 26 + 5?",
+        "respuesta": "31",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 27 + 5?",
+        "respuesta": "32",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 28 + 5?",
+        "respuesta": "33",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 29 + 5?",
+        "respuesta": "34",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 30 + 5?",
+        "respuesta": "35",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 31 + 5?",
+        "respuesta": "36",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 32 + 5?",
+        "respuesta": "37",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 33 + 5?",
+        "respuesta": "38",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 34 + 5?",
+        "respuesta": "39",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 35 + 5?",
+        "respuesta": "40",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 36 + 5?",
+        "respuesta": "41",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 37 + 5?",
+        "respuesta": "42",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 38 + 5?",
+        "respuesta": "43",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 39 + 5?",
+        "respuesta": "44",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 40 + 5?",
+        "respuesta": "45",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 41 + 5?",
+        "respuesta": "46",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 42 + 5?",
+        "respuesta": "47",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 43 + 5?",
+        "respuesta": "48",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 44 + 5?",
+        "respuesta": "49",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 45 + 5?",
+        "respuesta": "50",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 46 + 5?",
+        "respuesta": "51",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 47 + 5?",
+        "respuesta": "52",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 48 + 5?",
+        "respuesta": "53",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 49 + 5?",
+        "respuesta": "54",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 50 + 5?",
+        "respuesta": "55",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 51 + 5?",
+        "respuesta": "56",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 52 + 5?",
+        "respuesta": "57",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 53 + 5?",
+        "respuesta": "58",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 54 + 5?",
+        "respuesta": "59",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 55 + 5?",
+        "respuesta": "60",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 56 + 5?",
+        "respuesta": "61",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 57 + 5?",
+        "respuesta": "62",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 58 + 5?",
+        "respuesta": "63",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 59 + 5?",
+        "respuesta": "64",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 60 + 5?",
+        "respuesta": "65",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 61 + 5?",
+        "respuesta": "66",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 62 + 5?",
+        "respuesta": "67",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 63 + 5?",
+        "respuesta": "68",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 64 + 5?",
+        "respuesta": "69",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 65 + 5?",
+        "respuesta": "70",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 66 + 5?",
+        "respuesta": "71",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 67 + 5?",
+        "respuesta": "72",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 68 + 5?",
+        "respuesta": "73",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 69 + 5?",
+        "respuesta": "74",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 70 + 5?",
+        "respuesta": "75",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 71 + 5?",
+        "respuesta": "76",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 72 + 5?",
+        "respuesta": "77",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 73 + 5?",
+        "respuesta": "78",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 74 + 5?",
+        "respuesta": "79",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 75 + 5?",
+        "respuesta": "80",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 76 + 5?",
+        "respuesta": "81",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 77 + 5?",
+        "respuesta": "82",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 78 + 5?",
+        "respuesta": "83",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 79 + 5?",
+        "respuesta": "84",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 80 + 5?",
+        "respuesta": "85",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 81 + 5?",
+        "respuesta": "86",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 82 + 5?",
+        "respuesta": "87",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 83 + 5?",
+        "respuesta": "88",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 84 + 5?",
+        "respuesta": "89",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 85 + 5?",
+        "respuesta": "90",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 86 + 5?",
+        "respuesta": "91",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 87 + 5?",
+        "respuesta": "92",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 88 + 5?",
+        "respuesta": "93",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 89 + 5?",
+        "respuesta": "94",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 90 + 5?",
+        "respuesta": "95",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 91 + 5?",
+        "respuesta": "96",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 92 + 5?",
+        "respuesta": "97",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 93 + 5?",
+        "respuesta": "98",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 94 + 5?",
+        "respuesta": "99",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 95 + 5?",
+        "respuesta": "100",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 96 + 5?",
+        "respuesta": "101",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 97 + 5?",
+        "respuesta": "102",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 98 + 5?",
+        "respuesta": "103",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 99 + 5?",
+        "respuesta": "104",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 100 + 5?",
+        "respuesta": "105",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 101 + 5?",
+        "respuesta": "106",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 102 + 5?",
+        "respuesta": "107",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 103 + 5?",
+        "respuesta": "108",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 104 + 5?",
+        "respuesta": "109",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 105 + 5?",
+        "respuesta": "110",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 106 + 5?",
+        "respuesta": "111",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 107 + 5?",
+        "respuesta": "112",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 108 + 5?",
+        "respuesta": "113",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 109 + 5?",
+        "respuesta": "114",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 110 + 5?",
+        "respuesta": "115",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 111 + 5?",
+        "respuesta": "116",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 112 + 5?",
+        "respuesta": "117",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 113 + 5?",
+        "respuesta": "118",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 114 + 5?",
+        "respuesta": "119",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 115 + 5?",
+        "respuesta": "120",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 116 + 5?",
+        "respuesta": "121",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 117 + 5?",
+        "respuesta": "122",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 118 + 5?",
+        "respuesta": "123",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 119 + 5?",
+        "respuesta": "124",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 120 + 5?",
+        "respuesta": "125",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 121 + 5?",
+        "respuesta": "126",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 122 + 5?",
+        "respuesta": "127",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 123 + 5?",
+        "respuesta": "128",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 124 + 5?",
+        "respuesta": "129",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 125 + 5?",
+        "respuesta": "130",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 126 + 5?",
+        "respuesta": "131",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 127 + 5?",
+        "respuesta": "132",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 128 + 5?",
+        "respuesta": "133",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 129 + 5?",
+        "respuesta": "134",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 130 + 5?",
+        "respuesta": "135",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 131 + 5?",
+        "respuesta": "136",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 132 + 5?",
+        "respuesta": "137",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 133 + 5?",
+        "respuesta": "138",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 134 + 5?",
+        "respuesta": "139",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 135 + 5?",
+        "respuesta": "140",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 136 + 5?",
+        "respuesta": "141",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 137 + 5?",
+        "respuesta": "142",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 138 + 5?",
+        "respuesta": "143",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 139 + 5?",
+        "respuesta": "144",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 140 + 5?",
+        "respuesta": "145",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 141 + 5?",
+        "respuesta": "146",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 142 + 5?",
+        "respuesta": "147",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 143 + 5?",
+        "respuesta": "148",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 144 + 5?",
+        "respuesta": "149",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 145 + 5?",
+        "respuesta": "150",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 146 + 5?",
+        "respuesta": "151",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 147 + 5?",
+        "respuesta": "152",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 148 + 5?",
+        "respuesta": "153",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 149 + 5?",
+        "respuesta": "154",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 150 + 5?",
+        "respuesta": "155",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 151 + 5?",
+        "respuesta": "156",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 152 + 5?",
+        "respuesta": "157",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 153 + 5?",
+        "respuesta": "158",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 154 + 5?",
+        "respuesta": "159",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 155 + 5?",
+        "respuesta": "160",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 156 + 5?",
+        "respuesta": "161",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 157 + 5?",
+        "respuesta": "162",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 158 + 5?",
+        "respuesta": "163",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 159 + 5?",
+        "respuesta": "164",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 160 + 5?",
+        "respuesta": "165",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 161 + 5?",
+        "respuesta": "166",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 162 + 5?",
+        "respuesta": "167",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 163 + 5?",
+        "respuesta": "168",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 164 + 5?",
+        "respuesta": "169",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 165 + 5?",
+        "respuesta": "170",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 166 + 5?",
+        "respuesta": "171",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 167 + 5?",
+        "respuesta": "172",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 168 + 5?",
+        "respuesta": "173",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 169 + 5?",
+        "respuesta": "174",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 170 + 5?",
+        "respuesta": "175",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 171 + 5?",
+        "respuesta": "176",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 172 + 5?",
+        "respuesta": "177",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 173 + 5?",
+        "respuesta": "178",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 174 + 5?",
+        "respuesta": "179",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 175 + 5?",
+        "respuesta": "180",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 176 + 5?",
+        "respuesta": "181",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 177 + 5?",
+        "respuesta": "182",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 178 + 5?",
+        "respuesta": "183",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 179 + 5?",
+        "respuesta": "184",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 180 + 5?",
+        "respuesta": "185",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 181 + 5?",
+        "respuesta": "186",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 182 + 5?",
+        "respuesta": "187",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 183 + 5?",
+        "respuesta": "188",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 184 + 5?",
+        "respuesta": "189",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 185 + 5?",
+        "respuesta": "190",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 186 + 5?",
+        "respuesta": "191",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 187 + 5?",
+        "respuesta": "192",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 188 + 5?",
+        "respuesta": "193",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 189 + 5?",
+        "respuesta": "194",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 190 + 5?",
+        "respuesta": "195",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 191 + 5?",
+        "respuesta": "196",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 192 + 5?",
+        "respuesta": "197",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 193 + 5?",
+        "respuesta": "198",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 194 + 5?",
+        "respuesta": "199",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 195 + 5?",
+        "respuesta": "200",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 196 + 5?",
+        "respuesta": "201",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 197 + 5?",
+        "respuesta": "202",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 198 + 5?",
+        "respuesta": "203",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 199 + 5?",
+        "respuesta": "204",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 200 + 5?",
+        "respuesta": "205",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 201 + 5?",
+        "respuesta": "206",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 202 + 5?",
+        "respuesta": "207",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 203 + 5?",
+        "respuesta": "208",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 204 + 5?",
+        "respuesta": "209",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 205 + 5?",
+        "respuesta": "210",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 206 + 5?",
+        "respuesta": "211",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 207 + 5?",
+        "respuesta": "212",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 208 + 5?",
+        "respuesta": "213",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 209 + 5?",
+        "respuesta": "214",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 210 + 5?",
+        "respuesta": "215",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 211 + 5?",
+        "respuesta": "216",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 212 + 5?",
+        "respuesta": "217",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 213 + 5?",
+        "respuesta": "218",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 214 + 5?",
+        "respuesta": "219",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 215 + 5?",
+        "respuesta": "220",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 216 + 5?",
+        "respuesta": "221",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 217 + 5?",
+        "respuesta": "222",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 218 + 5?",
+        "respuesta": "223",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 219 + 5?",
+        "respuesta": "224",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 220 + 5?",
+        "respuesta": "225",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 221 + 5?",
+        "respuesta": "226",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 222 + 5?",
+        "respuesta": "227",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 223 + 5?",
+        "respuesta": "228",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 224 + 5?",
+        "respuesta": "229",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 225 + 5?",
+        "respuesta": "230",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 226 + 5?",
+        "respuesta": "231",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 227 + 5?",
+        "respuesta": "232",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 228 + 5?",
+        "respuesta": "233",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 229 + 5?",
+        "respuesta": "234",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 230 + 5?",
+        "respuesta": "235",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 231 + 5?",
+        "respuesta": "236",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 232 + 5?",
+        "respuesta": "237",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 233 + 5?",
+        "respuesta": "238",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 234 + 5?",
+        "respuesta": "239",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 235 + 5?",
+        "respuesta": "240",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 236 + 5?",
+        "respuesta": "241",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 237 + 5?",
+        "respuesta": "242",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 238 + 5?",
+        "respuesta": "243",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 239 + 5?",
+        "respuesta": "244",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 240 + 5?",
+        "respuesta": "245",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 241 + 5?",
+        "respuesta": "246",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 242 + 5?",
+        "respuesta": "247",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 243 + 5?",
+        "respuesta": "248",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 244 + 5?",
+        "respuesta": "249",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 245 + 5?",
+        "respuesta": "250",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 246 + 5?",
+        "respuesta": "251",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 247 + 5?",
+        "respuesta": "252",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 248 + 5?",
+        "respuesta": "253",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 249 + 5?",
+        "respuesta": "254",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 250 + 5?",
+        "respuesta": "255",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 251 + 5?",
+        "respuesta": "256",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 252 + 5?",
+        "respuesta": "257",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 253 + 5?",
+        "respuesta": "258",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 254 + 5?",
+        "respuesta": "259",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 255 + 5?",
+        "respuesta": "260",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 256 + 5?",
+        "respuesta": "261",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 257 + 5?",
+        "respuesta": "262",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 258 + 5?",
+        "respuesta": "263",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 259 + 5?",
+        "respuesta": "264",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 260 + 5?",
+        "respuesta": "265",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 261 + 5?",
+        "respuesta": "266",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 262 + 5?",
+        "respuesta": "267",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 263 + 5?",
+        "respuesta": "268",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 264 + 5?",
+        "respuesta": "269",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 265 + 5?",
+        "respuesta": "270",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 266 + 5?",
+        "respuesta": "271",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 267 + 5?",
+        "respuesta": "272",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 268 + 5?",
+        "respuesta": "273",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 269 + 5?",
+        "respuesta": "274",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 270 + 5?",
+        "respuesta": "275",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 271 + 5?",
+        "respuesta": "276",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 272 + 5?",
+        "respuesta": "277",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 273 + 5?",
+        "respuesta": "278",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 274 + 5?",
+        "respuesta": "279",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 275 + 5?",
+        "respuesta": "280",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 276 + 5?",
+        "respuesta": "281",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 277 + 5?",
+        "respuesta": "282",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 278 + 5?",
+        "respuesta": "283",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 279 + 5?",
+        "respuesta": "284",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 280 + 5?",
+        "respuesta": "285",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 281 + 5?",
+        "respuesta": "286",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 282 + 5?",
+        "respuesta": "287",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 283 + 5?",
+        "respuesta": "288",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 284 + 5?",
+        "respuesta": "289",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 285 + 5?",
+        "respuesta": "290",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 286 + 5?",
+        "respuesta": "291",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 287 + 5?",
+        "respuesta": "292",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 288 + 5?",
+        "respuesta": "293",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 289 + 5?",
+        "respuesta": "294",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 290 + 5?",
+        "respuesta": "295",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 291 + 5?",
+        "respuesta": "296",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 292 + 5?",
+        "respuesta": "297",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 293 + 5?",
+        "respuesta": "298",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 294 + 5?",
+        "respuesta": "299",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 295 + 5?",
+        "respuesta": "300",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 296 + 5?",
+        "respuesta": "301",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 297 + 5?",
+        "respuesta": "302",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 298 + 5?",
+        "respuesta": "303",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 299 + 5?",
+        "respuesta": "304",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 300 + 5?",
+        "respuesta": "305",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 301 + 5?",
+        "respuesta": "306",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 302 + 5?",
+        "respuesta": "307",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 303 + 5?",
+        "respuesta": "308",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 304 + 5?",
+        "respuesta": "309",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 305 + 5?",
+        "respuesta": "310",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 306 + 5?",
+        "respuesta": "311",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 307 + 5?",
+        "respuesta": "312",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 308 + 5?",
+        "respuesta": "313",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 309 + 5?",
+        "respuesta": "314",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 310 + 5?",
+        "respuesta": "315",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 311 + 5?",
+        "respuesta": "316",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 312 + 5?",
+        "respuesta": "317",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 313 + 5?",
+        "respuesta": "318",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 314 + 5?",
+        "respuesta": "319",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 315 + 5?",
+        "respuesta": "320",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 316 + 5?",
+        "respuesta": "321",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 317 + 5?",
+        "respuesta": "322",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 318 + 5?",
+        "respuesta": "323",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 319 + 5?",
+        "respuesta": "324",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 320 + 5?",
+        "respuesta": "325",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 321 + 5?",
+        "respuesta": "326",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 322 + 5?",
+        "respuesta": "327",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 323 + 5?",
+        "respuesta": "328",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 324 + 5?",
+        "respuesta": "329",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 325 + 5?",
+        "respuesta": "330",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 326 + 5?",
+        "respuesta": "331",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 327 + 5?",
+        "respuesta": "332",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 328 + 5?",
+        "respuesta": "333",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 329 + 5?",
+        "respuesta": "334",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 330 + 5?",
+        "respuesta": "335",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 331 + 5?",
+        "respuesta": "336",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 332 + 5?",
+        "respuesta": "337",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 333 + 5?",
+        "respuesta": "338",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 334 + 5?",
+        "respuesta": "339",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 335 + 5?",
+        "respuesta": "340",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 336 + 5?",
+        "respuesta": "341",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 337 + 5?",
+        "respuesta": "342",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 338 + 5?",
+        "respuesta": "343",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 339 + 5?",
+        "respuesta": "344",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 340 + 5?",
+        "respuesta": "345",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 341 + 5?",
+        "respuesta": "346",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 342 + 5?",
+        "respuesta": "347",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 343 + 5?",
+        "respuesta": "348",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 344 + 5?",
+        "respuesta": "349",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 345 + 5?",
+        "respuesta": "350",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 346 + 5?",
+        "respuesta": "351",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 347 + 5?",
+        "respuesta": "352",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 348 + 5?",
+        "respuesta": "353",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 349 + 5?",
+        "respuesta": "354",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 350 + 5?",
+        "respuesta": "355",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 351 + 5?",
+        "respuesta": "356",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 352 + 5?",
+        "respuesta": "357",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 353 + 5?",
+        "respuesta": "358",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 354 + 5?",
+        "respuesta": "359",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 355 + 5?",
+        "respuesta": "360",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 356 + 5?",
+        "respuesta": "361",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 357 + 5?",
+        "respuesta": "362",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 358 + 5?",
+        "respuesta": "363",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 359 + 5?",
+        "respuesta": "364",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 360 + 5?",
+        "respuesta": "365",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 361 + 5?",
+        "respuesta": "366",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 362 + 5?",
+        "respuesta": "367",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 363 + 5?",
+        "respuesta": "368",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 364 + 5?",
+        "respuesta": "369",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 365 + 5?",
+        "respuesta": "370",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 366 + 5?",
+        "respuesta": "371",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 367 + 5?",
+        "respuesta": "372",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 368 + 5?",
+        "respuesta": "373",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 369 + 5?",
+        "respuesta": "374",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 370 + 5?",
+        "respuesta": "375",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 371 + 5?",
+        "respuesta": "376",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 372 + 5?",
+        "respuesta": "377",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 373 + 5?",
+        "respuesta": "378",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 374 + 5?",
+        "respuesta": "379",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 375 + 5?",
+        "respuesta": "380",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 376 + 5?",
+        "respuesta": "381",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 377 + 5?",
+        "respuesta": "382",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 378 + 5?",
+        "respuesta": "383",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 379 + 5?",
+        "respuesta": "384",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 380 + 5?",
+        "respuesta": "385",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 381 + 5?",
+        "respuesta": "386",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 382 + 5?",
+        "respuesta": "387",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 383 + 5?",
+        "respuesta": "388",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 384 + 5?",
+        "respuesta": "389",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 385 + 5?",
+        "respuesta": "390",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 386 + 5?",
+        "respuesta": "391",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 387 + 5?",
+        "respuesta": "392",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 388 + 5?",
+        "respuesta": "393",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 389 + 5?",
+        "respuesta": "394",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 390 + 5?",
+        "respuesta": "395",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 391 + 5?",
+        "respuesta": "396",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 392 + 5?",
+        "respuesta": "397",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 393 + 5?",
+        "respuesta": "398",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 394 + 5?",
+        "respuesta": "399",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 395 + 5?",
+        "respuesta": "400",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 396 + 5?",
+        "respuesta": "401",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 397 + 5?",
+        "respuesta": "402",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 398 + 5?",
+        "respuesta": "403",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 399 + 5?",
+        "respuesta": "404",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 400 + 5?",
+        "respuesta": "405",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 401 + 5?",
+        "respuesta": "406",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 402 + 5?",
+        "respuesta": "407",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 403 + 5?",
+        "respuesta": "408",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 404 + 5?",
+        "respuesta": "409",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 405 + 5?",
+        "respuesta": "410",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 406 + 5?",
+        "respuesta": "411",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 407 + 5?",
+        "respuesta": "412",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 408 + 5?",
+        "respuesta": "413",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 409 + 5?",
+        "respuesta": "414",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 410 + 5?",
+        "respuesta": "415",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 411 + 5?",
+        "respuesta": "416",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 412 + 5?",
+        "respuesta": "417",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 413 + 5?",
+        "respuesta": "418",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 414 + 5?",
+        "respuesta": "419",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 415 + 5?",
+        "respuesta": "420",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 416 + 5?",
+        "respuesta": "421",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 417 + 5?",
+        "respuesta": "422",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 418 + 5?",
+        "respuesta": "423",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 419 + 5?",
+        "respuesta": "424",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 420 + 5?",
+        "respuesta": "425",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 421 + 5?",
+        "respuesta": "426",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 422 + 5?",
+        "respuesta": "427",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 423 + 5?",
+        "respuesta": "428",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 424 + 5?",
+        "respuesta": "429",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 425 + 5?",
+        "respuesta": "430",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 426 + 5?",
+        "respuesta": "431",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 427 + 5?",
+        "respuesta": "432",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 428 + 5?",
+        "respuesta": "433",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 429 + 5?",
+        "respuesta": "434",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 430 + 5?",
+        "respuesta": "435",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 431 + 5?",
+        "respuesta": "436",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 432 + 5?",
+        "respuesta": "437",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 433 + 5?",
+        "respuesta": "438",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 434 + 5?",
+        "respuesta": "439",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 435 + 5?",
+        "respuesta": "440",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 436 + 5?",
+        "respuesta": "441",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 437 + 5?",
+        "respuesta": "442",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 438 + 5?",
+        "respuesta": "443",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 439 + 5?",
+        "respuesta": "444",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 440 + 5?",
+        "respuesta": "445",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 441 + 5?",
+        "respuesta": "446",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 442 + 5?",
+        "respuesta": "447",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 443 + 5?",
+        "respuesta": "448",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 444 + 5?",
+        "respuesta": "449",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 445 + 5?",
+        "respuesta": "450",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 446 + 5?",
+        "respuesta": "451",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 447 + 5?",
+        "respuesta": "452",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 448 + 5?",
+        "respuesta": "453",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 449 + 5?",
+        "respuesta": "454",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 450 + 5?",
+        "respuesta": "455",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 451 + 5?",
+        "respuesta": "456",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 452 + 5?",
+        "respuesta": "457",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 453 + 5?",
+        "respuesta": "458",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 454 + 5?",
+        "respuesta": "459",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 455 + 5?",
+        "respuesta": "460",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 456 + 5?",
+        "respuesta": "461",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 457 + 5?",
+        "respuesta": "462",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 458 + 5?",
+        "respuesta": "463",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 459 + 5?",
+        "respuesta": "464",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 460 + 5?",
+        "respuesta": "465",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 461 + 5?",
+        "respuesta": "466",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 462 + 5?",
+        "respuesta": "467",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 463 + 5?",
+        "respuesta": "468",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 464 + 5?",
+        "respuesta": "469",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 465 + 5?",
+        "respuesta": "470",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 466 + 5?",
+        "respuesta": "471",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 467 + 5?",
+        "respuesta": "472",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 468 + 5?",
+        "respuesta": "473",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 469 + 5?",
+        "respuesta": "474",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 470 + 5?",
+        "respuesta": "475",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 471 + 5?",
+        "respuesta": "476",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 472 + 5?",
+        "respuesta": "477",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 473 + 5?",
+        "respuesta": "478",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 474 + 5?",
+        "respuesta": "479",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 475 + 5?",
+        "respuesta": "480",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 476 + 5?",
+        "respuesta": "481",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 477 + 5?",
+        "respuesta": "482",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 478 + 5?",
+        "respuesta": "483",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 479 + 5?",
+        "respuesta": "484",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 480 + 5?",
+        "respuesta": "485",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 481 + 5?",
+        "respuesta": "486",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 482 + 5?",
+        "respuesta": "487",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 483 + 5?",
+        "respuesta": "488",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 484 + 5?",
+        "respuesta": "489",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 485 + 5?",
+        "respuesta": "490",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 486 + 5?",
+        "respuesta": "491",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 487 + 5?",
+        "respuesta": "492",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 488 + 5?",
+        "respuesta": "493",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 489 + 5?",
+        "respuesta": "494",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 490 + 5?",
+        "respuesta": "495",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 491 + 5?",
+        "respuesta": "496",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 492 + 5?",
+        "respuesta": "497",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 493 + 5?",
+        "respuesta": "498",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 494 + 5?",
+        "respuesta": "499",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 495 + 5?",
+        "respuesta": "500",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 496 + 5?",
+        "respuesta": "501",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 497 + 5?",
+        "respuesta": "502",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 498 + 5?",
+        "respuesta": "503",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 499 + 5?",
+        "respuesta": "504",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 500 + 5?",
+        "respuesta": "505",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 501 + 5?",
+        "respuesta": "506",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 502 + 5?",
+        "respuesta": "507",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 503 + 5?",
+        "respuesta": "508",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 504 + 5?",
+        "respuesta": "509",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 505 + 5?",
+        "respuesta": "510",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 506 + 5?",
+        "respuesta": "511",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 507 + 5?",
+        "respuesta": "512",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 508 + 5?",
+        "respuesta": "513",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 509 + 5?",
+        "respuesta": "514",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 510 + 5?",
+        "respuesta": "515",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 511 + 5?",
+        "respuesta": "516",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 512 + 5?",
+        "respuesta": "517",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 513 + 5?",
+        "respuesta": "518",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 514 + 5?",
+        "respuesta": "519",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 515 + 5?",
+        "respuesta": "520",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 516 + 5?",
+        "respuesta": "521",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 517 + 5?",
+        "respuesta": "522",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 518 + 5?",
+        "respuesta": "523",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 519 + 5?",
+        "respuesta": "524",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 520 + 5?",
+        "respuesta": "525",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 521 + 5?",
+        "respuesta": "526",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 522 + 5?",
+        "respuesta": "527",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 523 + 5?",
+        "respuesta": "528",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 524 + 5?",
+        "respuesta": "529",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 525 + 5?",
+        "respuesta": "530",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 526 + 5?",
+        "respuesta": "531",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 527 + 5?",
+        "respuesta": "532",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 528 + 5?",
+        "respuesta": "533",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 529 + 5?",
+        "respuesta": "534",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 530 + 5?",
+        "respuesta": "535",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 531 + 5?",
+        "respuesta": "536",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 532 + 5?",
+        "respuesta": "537",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 533 + 5?",
+        "respuesta": "538",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 534 + 5?",
+        "respuesta": "539",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 535 + 5?",
+        "respuesta": "540",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 536 + 5?",
+        "respuesta": "541",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 537 + 5?",
+        "respuesta": "542",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 538 + 5?",
+        "respuesta": "543",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 539 + 5?",
+        "respuesta": "544",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 540 + 5?",
+        "respuesta": "545",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 541 + 5?",
+        "respuesta": "546",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 542 + 5?",
+        "respuesta": "547",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 543 + 5?",
+        "respuesta": "548",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 544 + 5?",
+        "respuesta": "549",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 545 + 5?",
+        "respuesta": "550",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 546 + 5?",
+        "respuesta": "551",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 547 + 5?",
+        "respuesta": "552",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 548 + 5?",
+        "respuesta": "553",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 549 + 5?",
+        "respuesta": "554",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 550 + 5?",
+        "respuesta": "555",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 551 + 5?",
+        "respuesta": "556",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 552 + 5?",
+        "respuesta": "557",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 553 + 5?",
+        "respuesta": "558",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 554 + 5?",
+        "respuesta": "559",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 555 + 5?",
+        "respuesta": "560",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 556 + 5?",
+        "respuesta": "561",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 557 + 5?",
+        "respuesta": "562",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 558 + 5?",
+        "respuesta": "563",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 559 + 5?",
+        "respuesta": "564",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 560 + 5?",
+        "respuesta": "565",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 561 + 5?",
+        "respuesta": "566",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 562 + 5?",
+        "respuesta": "567",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 563 + 5?",
+        "respuesta": "568",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 564 + 5?",
+        "respuesta": "569",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 565 + 5?",
+        "respuesta": "570",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 566 + 5?",
+        "respuesta": "571",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 567 + 5?",
+        "respuesta": "572",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 568 + 5?",
+        "respuesta": "573",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 569 + 5?",
+        "respuesta": "574",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 570 + 5?",
+        "respuesta": "575",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 571 + 5?",
+        "respuesta": "576",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 572 + 5?",
+        "respuesta": "577",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 573 + 5?",
+        "respuesta": "578",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 574 + 5?",
+        "respuesta": "579",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 575 + 5?",
+        "respuesta": "580",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 576 + 5?",
+        "respuesta": "581",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 577 + 5?",
+        "respuesta": "582",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 578 + 5?",
+        "respuesta": "583",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 579 + 5?",
+        "respuesta": "584",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 580 + 5?",
+        "respuesta": "585",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 581 + 5?",
+        "respuesta": "586",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 582 + 5?",
+        "respuesta": "587",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 583 + 5?",
+        "respuesta": "588",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 584 + 5?",
+        "respuesta": "589",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 585 + 5?",
+        "respuesta": "590",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 586 + 5?",
+        "respuesta": "591",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 587 + 5?",
+        "respuesta": "592",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 588 + 5?",
+        "respuesta": "593",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 589 + 5?",
+        "respuesta": "594",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 590 + 5?",
+        "respuesta": "595",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 591 + 5?",
+        "respuesta": "596",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 592 + 5?",
+        "respuesta": "597",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 593 + 5?",
+        "respuesta": "598",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 594 + 5?",
+        "respuesta": "599",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 595 + 5?",
+        "respuesta": "600",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 596 + 5?",
+        "respuesta": "601",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 597 + 5?",
+        "respuesta": "602",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 598 + 5?",
+        "respuesta": "603",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 599 + 5?",
+        "respuesta": "604",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 600 + 5?",
+        "respuesta": "605",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 601 + 5?",
+        "respuesta": "606",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 602 + 5?",
+        "respuesta": "607",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 603 + 5?",
+        "respuesta": "608",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 604 + 5?",
+        "respuesta": "609",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 605 + 5?",
+        "respuesta": "610",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 606 + 5?",
+        "respuesta": "611",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 607 + 5?",
+        "respuesta": "612",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 608 + 5?",
+        "respuesta": "613",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 609 + 5?",
+        "respuesta": "614",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 610 + 5?",
+        "respuesta": "615",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 611 + 5?",
+        "respuesta": "616",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 612 + 5?",
+        "respuesta": "617",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 613 + 5?",
+        "respuesta": "618",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 614 + 5?",
+        "respuesta": "619",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 615 + 5?",
+        "respuesta": "620",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 616 + 5?",
+        "respuesta": "621",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 617 + 5?",
+        "respuesta": "622",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 618 + 5?",
+        "respuesta": "623",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 619 + 5?",
+        "respuesta": "624",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 620 + 5?",
+        "respuesta": "625",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 621 + 5?",
+        "respuesta": "626",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 622 + 5?",
+        "respuesta": "627",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 623 + 5?",
+        "respuesta": "628",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 624 + 5?",
+        "respuesta": "629",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 625 + 5?",
+        "respuesta": "630",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 626 + 5?",
+        "respuesta": "631",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 627 + 5?",
+        "respuesta": "632",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 628 + 5?",
+        "respuesta": "633",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 629 + 5?",
+        "respuesta": "634",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 630 + 5?",
+        "respuesta": "635",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 631 + 5?",
+        "respuesta": "636",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 632 + 5?",
+        "respuesta": "637",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 633 + 5?",
+        "respuesta": "638",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 634 + 5?",
+        "respuesta": "639",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 635 + 5?",
+        "respuesta": "640",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 636 + 5?",
+        "respuesta": "641",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 637 + 5?",
+        "respuesta": "642",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 638 + 5?",
+        "respuesta": "643",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 639 + 5?",
+        "respuesta": "644",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 640 + 5?",
+        "respuesta": "645",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 641 + 5?",
+        "respuesta": "646",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 642 + 5?",
+        "respuesta": "647",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 643 + 5?",
+        "respuesta": "648",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 644 + 5?",
+        "respuesta": "649",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 645 + 5?",
+        "respuesta": "650",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 646 + 5?",
+        "respuesta": "651",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 647 + 5?",
+        "respuesta": "652",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 648 + 5?",
+        "respuesta": "653",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 649 + 5?",
+        "respuesta": "654",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 650 + 5?",
+        "respuesta": "655",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 651 + 5?",
+        "respuesta": "656",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 652 + 5?",
+        "respuesta": "657",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 653 + 5?",
+        "respuesta": "658",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 654 + 5?",
+        "respuesta": "659",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 655 + 5?",
+        "respuesta": "660",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 656 + 5?",
+        "respuesta": "661",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 657 + 5?",
+        "respuesta": "662",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 658 + 5?",
+        "respuesta": "663",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 659 + 5?",
+        "respuesta": "664",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 660 + 5?",
+        "respuesta": "665",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 661 + 5?",
+        "respuesta": "666",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 662 + 5?",
+        "respuesta": "667",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 663 + 5?",
+        "respuesta": "668",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 664 + 5?",
+        "respuesta": "669",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 665 + 5?",
+        "respuesta": "670",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 666 + 5?",
+        "respuesta": "671",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 667 + 5?",
+        "respuesta": "672",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 668 + 5?",
+        "respuesta": "673",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 669 + 5?",
+        "respuesta": "674",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 670 + 5?",
+        "respuesta": "675",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 671 + 5?",
+        "respuesta": "676",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 672 + 5?",
+        "respuesta": "677",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 673 + 5?",
+        "respuesta": "678",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 674 + 5?",
+        "respuesta": "679",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 675 + 5?",
+        "respuesta": "680",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 676 + 5?",
+        "respuesta": "681",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 677 + 5?",
+        "respuesta": "682",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 678 + 5?",
+        "respuesta": "683",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 679 + 5?",
+        "respuesta": "684",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 680 + 5?",
+        "respuesta": "685",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 681 + 5?",
+        "respuesta": "686",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 682 + 5?",
+        "respuesta": "687",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 683 + 5?",
+        "respuesta": "688",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 684 + 5?",
+        "respuesta": "689",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 685 + 5?",
+        "respuesta": "690",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 686 + 5?",
+        "respuesta": "691",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 687 + 5?",
+        "respuesta": "692",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 688 + 5?",
+        "respuesta": "693",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 689 + 5?",
+        "respuesta": "694",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 690 + 5?",
+        "respuesta": "695",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 691 + 5?",
+        "respuesta": "696",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 692 + 5?",
+        "respuesta": "697",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 693 + 5?",
+        "respuesta": "698",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 694 + 5?",
+        "respuesta": "699",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 695 + 5?",
+        "respuesta": "700",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 696 + 5?",
+        "respuesta": "701",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 697 + 5?",
+        "respuesta": "702",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 698 + 5?",
+        "respuesta": "703",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 699 + 5?",
+        "respuesta": "704",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 700 + 5?",
+        "respuesta": "705",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 701 + 5?",
+        "respuesta": "706",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 702 + 5?",
+        "respuesta": "707",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 703 + 5?",
+        "respuesta": "708",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 704 + 5?",
+        "respuesta": "709",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 705 + 5?",
+        "respuesta": "710",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 706 + 5?",
+        "respuesta": "711",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 707 + 5?",
+        "respuesta": "712",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 708 + 5?",
+        "respuesta": "713",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 709 + 5?",
+        "respuesta": "714",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 710 + 5?",
+        "respuesta": "715",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 711 + 5?",
+        "respuesta": "716",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 712 + 5?",
+        "respuesta": "717",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 713 + 5?",
+        "respuesta": "718",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 714 + 5?",
+        "respuesta": "719",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 715 + 5?",
+        "respuesta": "720",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 716 + 5?",
+        "respuesta": "721",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 717 + 5?",
+        "respuesta": "722",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 718 + 5?",
+        "respuesta": "723",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 719 + 5?",
+        "respuesta": "724",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 720 + 5?",
+        "respuesta": "725",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 721 + 5?",
+        "respuesta": "726",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 722 + 5?",
+        "respuesta": "727",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 723 + 5?",
+        "respuesta": "728",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 724 + 5?",
+        "respuesta": "729",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 725 + 5?",
+        "respuesta": "730",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 726 + 5?",
+        "respuesta": "731",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 727 + 5?",
+        "respuesta": "732",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 728 + 5?",
+        "respuesta": "733",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 729 + 5?",
+        "respuesta": "734",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 730 + 5?",
+        "respuesta": "735",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 731 + 5?",
+        "respuesta": "736",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 732 + 5?",
+        "respuesta": "737",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 733 + 5?",
+        "respuesta": "738",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 734 + 5?",
+        "respuesta": "739",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 735 + 5?",
+        "respuesta": "740",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 736 + 5?",
+        "respuesta": "741",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 737 + 5?",
+        "respuesta": "742",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 738 + 5?",
+        "respuesta": "743",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 739 + 5?",
+        "respuesta": "744",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 740 + 5?",
+        "respuesta": "745",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 741 + 5?",
+        "respuesta": "746",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 742 + 5?",
+        "respuesta": "747",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 743 + 5?",
+        "respuesta": "748",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 744 + 5?",
+        "respuesta": "749",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 745 + 5?",
+        "respuesta": "750",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 746 + 5?",
+        "respuesta": "751",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 747 + 5?",
+        "respuesta": "752",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 748 + 5?",
+        "respuesta": "753",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 749 + 5?",
+        "respuesta": "754",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 750 + 5?",
+        "respuesta": "755",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 751 + 5?",
+        "respuesta": "756",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 752 + 5?",
+        "respuesta": "757",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 753 + 5?",
+        "respuesta": "758",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 754 + 5?",
+        "respuesta": "759",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 755 + 5?",
+        "respuesta": "760",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 756 + 5?",
+        "respuesta": "761",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 757 + 5?",
+        "respuesta": "762",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 758 + 5?",
+        "respuesta": "763",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 759 + 5?",
+        "respuesta": "764",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 760 + 5?",
+        "respuesta": "765",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 761 + 5?",
+        "respuesta": "766",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 762 + 5?",
+        "respuesta": "767",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 763 + 5?",
+        "respuesta": "768",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 764 + 5?",
+        "respuesta": "769",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 765 + 5?",
+        "respuesta": "770",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 766 + 5?",
+        "respuesta": "771",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 767 + 5?",
+        "respuesta": "772",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 768 + 5?",
+        "respuesta": "773",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 769 + 5?",
+        "respuesta": "774",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 770 + 5?",
+        "respuesta": "775",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 771 + 5?",
+        "respuesta": "776",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 772 + 5?",
+        "respuesta": "777",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 773 + 5?",
+        "respuesta": "778",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 774 + 5?",
+        "respuesta": "779",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 775 + 5?",
+        "respuesta": "780",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 776 + 5?",
+        "respuesta": "781",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 777 + 5?",
+        "respuesta": "782",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 778 + 5?",
+        "respuesta": "783",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 779 + 5?",
+        "respuesta": "784",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 780 + 5?",
+        "respuesta": "785",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 781 + 5?",
+        "respuesta": "786",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 782 + 5?",
+        "respuesta": "787",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 783 + 5?",
+        "respuesta": "788",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 784 + 5?",
+        "respuesta": "789",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 785 + 5?",
+        "respuesta": "790",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 786 + 5?",
+        "respuesta": "791",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 787 + 5?",
+        "respuesta": "792",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 788 + 5?",
+        "respuesta": "793",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 789 + 5?",
+        "respuesta": "794",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 790 + 5?",
+        "respuesta": "795",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 791 + 5?",
+        "respuesta": "796",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 792 + 5?",
+        "respuesta": "797",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 793 + 5?",
+        "respuesta": "798",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 794 + 5?",
+        "respuesta": "799",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 795 + 5?",
+        "respuesta": "800",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 796 + 5?",
+        "respuesta": "801",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 797 + 5?",
+        "respuesta": "802",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 798 + 5?",
+        "respuesta": "803",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 799 + 5?",
+        "respuesta": "804",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 800 + 5?",
+        "respuesta": "805",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 801 + 5?",
+        "respuesta": "806",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 802 + 5?",
+        "respuesta": "807",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 803 + 5?",
+        "respuesta": "808",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 804 + 5?",
+        "respuesta": "809",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 805 + 5?",
+        "respuesta": "810",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 806 + 5?",
+        "respuesta": "811",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 807 + 5?",
+        "respuesta": "812",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 808 + 5?",
+        "respuesta": "813",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 809 + 5?",
+        "respuesta": "814",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 810 + 5?",
+        "respuesta": "815",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 811 + 5?",
+        "respuesta": "816",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 812 + 5?",
+        "respuesta": "817",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 813 + 5?",
+        "respuesta": "818",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 814 + 5?",
+        "respuesta": "819",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 815 + 5?",
+        "respuesta": "820",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 816 + 5?",
+        "respuesta": "821",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 817 + 5?",
+        "respuesta": "822",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 818 + 5?",
+        "respuesta": "823",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 819 + 5?",
+        "respuesta": "824",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 820 + 5?",
+        "respuesta": "825",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 821 + 5?",
+        "respuesta": "826",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 822 + 5?",
+        "respuesta": "827",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 823 + 5?",
+        "respuesta": "828",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 824 + 5?",
+        "respuesta": "829",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 825 + 5?",
+        "respuesta": "830",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 826 + 5?",
+        "respuesta": "831",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 827 + 5?",
+        "respuesta": "832",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 828 + 5?",
+        "respuesta": "833",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 829 + 5?",
+        "respuesta": "834",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 830 + 5?",
+        "respuesta": "835",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 831 + 5?",
+        "respuesta": "836",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 832 + 5?",
+        "respuesta": "837",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 833 + 5?",
+        "respuesta": "838",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 834 + 5?",
+        "respuesta": "839",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 835 + 5?",
+        "respuesta": "840",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 836 + 5?",
+        "respuesta": "841",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 837 + 5?",
+        "respuesta": "842",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 838 + 5?",
+        "respuesta": "843",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 839 + 5?",
+        "respuesta": "844",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 840 + 5?",
+        "respuesta": "845",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 841 + 5?",
+        "respuesta": "846",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 842 + 5?",
+        "respuesta": "847",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 843 + 5?",
+        "respuesta": "848",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 844 + 5?",
+        "respuesta": "849",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 845 + 5?",
+        "respuesta": "850",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 846 + 5?",
+        "respuesta": "851",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 847 + 5?",
+        "respuesta": "852",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 848 + 5?",
+        "respuesta": "853",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 849 + 5?",
+        "respuesta": "854",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 850 + 5?",
+        "respuesta": "855",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 851 + 5?",
+        "respuesta": "856",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 852 + 5?",
+        "respuesta": "857",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 853 + 5?",
+        "respuesta": "858",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 854 + 5?",
+        "respuesta": "859",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 855 + 5?",
+        "respuesta": "860",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 856 + 5?",
+        "respuesta": "861",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 857 + 5?",
+        "respuesta": "862",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 858 + 5?",
+        "respuesta": "863",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 859 + 5?",
+        "respuesta": "864",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 860 + 5?",
+        "respuesta": "865",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 861 + 5?",
+        "respuesta": "866",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 862 + 5?",
+        "respuesta": "867",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 863 + 5?",
+        "respuesta": "868",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 864 + 5?",
+        "respuesta": "869",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 865 + 5?",
+        "respuesta": "870",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 866 + 5?",
+        "respuesta": "871",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 867 + 5?",
+        "respuesta": "872",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 868 + 5?",
+        "respuesta": "873",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 869 + 5?",
+        "respuesta": "874",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 870 + 5?",
+        "respuesta": "875",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 871 + 5?",
+        "respuesta": "876",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 872 + 5?",
+        "respuesta": "877",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 873 + 5?",
+        "respuesta": "878",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 874 + 5?",
+        "respuesta": "879",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 875 + 5?",
+        "respuesta": "880",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 876 + 5?",
+        "respuesta": "881",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 877 + 5?",
+        "respuesta": "882",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 878 + 5?",
+        "respuesta": "883",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 879 + 5?",
+        "respuesta": "884",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 880 + 5?",
+        "respuesta": "885",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 881 + 5?",
+        "respuesta": "886",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 882 + 5?",
+        "respuesta": "887",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 883 + 5?",
+        "respuesta": "888",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 884 + 5?",
+        "respuesta": "889",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 885 + 5?",
+        "respuesta": "890",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 886 + 5?",
+        "respuesta": "891",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 887 + 5?",
+        "respuesta": "892",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 888 + 5?",
+        "respuesta": "893",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 889 + 5?",
+        "respuesta": "894",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 890 + 5?",
+        "respuesta": "895",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 891 + 5?",
+        "respuesta": "896",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 892 + 5?",
+        "respuesta": "897",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 893 + 5?",
+        "respuesta": "898",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 894 + 5?",
+        "respuesta": "899",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 895 + 5?",
+        "respuesta": "900",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 896 + 5?",
+        "respuesta": "901",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 897 + 5?",
+        "respuesta": "902",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 898 + 5?",
+        "respuesta": "903",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 899 + 5?",
+        "respuesta": "904",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 900 + 5?",
+        "respuesta": "905",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 901 + 5?",
+        "respuesta": "906",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 902 + 5?",
+        "respuesta": "907",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 903 + 5?",
+        "respuesta": "908",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 904 + 5?",
+        "respuesta": "909",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 905 + 5?",
+        "respuesta": "910",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 906 + 5?",
+        "respuesta": "911",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 907 + 5?",
+        "respuesta": "912",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 908 + 5?",
+        "respuesta": "913",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 909 + 5?",
+        "respuesta": "914",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 910 + 5?",
+        "respuesta": "915",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 911 + 5?",
+        "respuesta": "916",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 912 + 5?",
+        "respuesta": "917",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 913 + 5?",
+        "respuesta": "918",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 914 + 5?",
+        "respuesta": "919",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 915 + 5?",
+        "respuesta": "920",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 916 + 5?",
+        "respuesta": "921",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 917 + 5?",
+        "respuesta": "922",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 918 + 5?",
+        "respuesta": "923",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 919 + 5?",
+        "respuesta": "924",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 920 + 5?",
+        "respuesta": "925",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 921 + 5?",
+        "respuesta": "926",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 922 + 5?",
+        "respuesta": "927",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 923 + 5?",
+        "respuesta": "928",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 924 + 5?",
+        "respuesta": "929",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 925 + 5?",
+        "respuesta": "930",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 926 + 5?",
+        "respuesta": "931",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 927 + 5?",
+        "respuesta": "932",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 928 + 5?",
+        "respuesta": "933",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 929 + 5?",
+        "respuesta": "934",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 930 + 5?",
+        "respuesta": "935",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 931 + 5?",
+        "respuesta": "936",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 932 + 5?",
+        "respuesta": "937",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 933 + 5?",
+        "respuesta": "938",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 934 + 5?",
+        "respuesta": "939",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 935 + 5?",
+        "respuesta": "940",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 936 + 5?",
+        "respuesta": "941",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 937 + 5?",
+        "respuesta": "942",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 938 + 5?",
+        "respuesta": "943",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 939 + 5?",
+        "respuesta": "944",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 940 + 5?",
+        "respuesta": "945",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 941 + 5?",
+        "respuesta": "946",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 942 + 5?",
+        "respuesta": "947",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 943 + 5?",
+        "respuesta": "948",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 944 + 5?",
+        "respuesta": "949",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 945 + 5?",
+        "respuesta": "950",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 946 + 5?",
+        "respuesta": "951",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 947 + 5?",
+        "respuesta": "952",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 948 + 5?",
+        "respuesta": "953",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 949 + 5?",
+        "respuesta": "954",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 950 + 5?",
+        "respuesta": "955",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 951 + 5?",
+        "respuesta": "956",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 952 + 5?",
+        "respuesta": "957",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 953 + 5?",
+        "respuesta": "958",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 954 + 5?",
+        "respuesta": "959",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 955 + 5?",
+        "respuesta": "960",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 956 + 5?",
+        "respuesta": "961",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 957 + 5?",
+        "respuesta": "962",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 958 + 5?",
+        "respuesta": "963",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 959 + 5?",
+        "respuesta": "964",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 960 + 5?",
+        "respuesta": "965",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 961 + 5?",
+        "respuesta": "966",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 962 + 5?",
+        "respuesta": "967",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 963 + 5?",
+        "respuesta": "968",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 964 + 5?",
+        "respuesta": "969",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 965 + 5?",
+        "respuesta": "970",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 966 + 5?",
+        "respuesta": "971",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 967 + 5?",
+        "respuesta": "972",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 968 + 5?",
+        "respuesta": "973",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 969 + 5?",
+        "respuesta": "974",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 970 + 5?",
+        "respuesta": "975",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 971 + 5?",
+        "respuesta": "976",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 972 + 5?",
+        "respuesta": "977",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 973 + 5?",
+        "respuesta": "978",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 974 + 5?",
+        "respuesta": "979",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 975 + 5?",
+        "respuesta": "980",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 976 + 5?",
+        "respuesta": "981",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 977 + 5?",
+        "respuesta": "982",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 978 + 5?",
+        "respuesta": "983",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 979 + 5?",
+        "respuesta": "984",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 980 + 5?",
+        "respuesta": "985",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 981 + 5?",
+        "respuesta": "986",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 982 + 5?",
+        "respuesta": "987",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 983 + 5?",
+        "respuesta": "988",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 984 + 5?",
+        "respuesta": "989",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 985 + 5?",
+        "respuesta": "990",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 986 + 5?",
+        "respuesta": "991",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 987 + 5?",
+        "respuesta": "992",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 988 + 5?",
+        "respuesta": "993",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 989 + 5?",
+        "respuesta": "994",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 990 + 5?",
+        "respuesta": "995",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 991 + 5?",
+        "respuesta": "996",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 992 + 5?",
+        "respuesta": "997",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 993 + 5?",
+        "respuesta": "998",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 994 + 5?",
+        "respuesta": "999",
+        "tema": "Matemáticas"
+    },
+    {
+        "pregunta": "Calcula mentalmente: ¿Cuánto es 995 + 5?",
+        "respuesta": "1000",
+        "tema": "Matemáticas"
+    }
+]

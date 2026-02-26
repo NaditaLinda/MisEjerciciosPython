@@ -2,6 +2,7 @@ import json
 import os
 from abc import ABC, abstractmethod
 import random
+from enum import Enum
 
 # --- 1. SISTEMA DE APOYO Y ESTADOS ---
 
@@ -175,6 +176,11 @@ class EstadoAumentoAtaque(Estado):
         personaje._ataque_base -= self.bono_ataque
         print(f"📉 El efecto de {self.nombre} ha terminado. El ataque de {personaje._nombre} vuelve a la normalidad.")
 
+class ResultadoCombate(Enum):
+    VICTORIA = 1
+    DERROTA = 2
+    EMPATE = 3
+
 # --- 2. CLASES BASE DE PERSONAJE ---
 
 class Personaje(ABC):
@@ -290,6 +296,13 @@ class Personaje(ABC):
     def __str__(self):
         return f"{self._nombre} ({self.__class__.__name__}) - Niv: {self._nivel} | HP: {self._vida_actual}/{self._vida_max}"
     
+    def restaurar_salud_y_mana(self):
+        """Restaura los recursos al máximo (útil tras derrotas o descansos)."""
+        self._vida_actual = self._vida_max
+        self._mana_actual = self._mana_max
+        self.estados = [] # Limpiamos estados alterados como veneno
+        print(f"✨ {self._nombre} ha descansado. ¡Energía al máximo!")
+
 # --- 3. TIPOS DE PERSONAJE (Herencia y Polimorfismo) ---
 
 class Guerrero(Personaje):
@@ -402,10 +415,16 @@ class CombatePro:
             print(f"   > {self.e1}\n")
 
         # 7. RESULTADO FINAL
+        # 7. RESULTADO FINAL (Usando Enums)
         if self.j1.esta_vivo():
             print(f"🏆 ¡{self.j1._nombre} ha ganado!")
+            return ResultadoCombate.VICTORIA
+        elif not self.j1.esta_vivo() and not self.e1.esta_vivo():
+            print("🤝 ¡Empate técnico! Ambos han caído.")
+            return ResultadoCombate.EMPATE
         else:
             print(f"💀 {self.j1._nombre} ha sido derrotado...")
+            return ResultadoCombate.DERROTA
 
     def ejecutar_turno_logico(self, atacante, defensor):
         """Decide aleatoriamente entre ataque físico o habilidad."""
@@ -463,46 +482,56 @@ MUNDO = {
     "Nivel 10": ["Dimensión del Vacío Absoluto Final", "Reino de la Oscuridad Eterna Suprema Infinita", "Infierno de Hielo Infinito Absoluto", "Cielo de las Almas Perdidas Eternas Finales", "Abismo de la Desesperación Final Absoluto", "Mundo Espectral Inmortal Supremo", "Planeta de las Pesadillas Eternas Finales", "Realidad Fragmentada Absoluta Infinita", "Universo Alternativo Infinito Absoluto", "Nexus del Infinito Supremo Final"] 
 }
 
-class EventoMundo:
-    def __init__(self):
-        # Diccionario de preguntas: {Pregunta: Respuesta_Correcta}
-        self.preguntas = {
-            "¿Cuál es el lenguaje de programación más usado en IA?": "python",
-            "¿Qué planeta es conocido como el Planeta Rojo?": "marte",
-            "¿Quién escribió 'El Quijote'?": "cervantes",
-            "¿Cuál es el símbolo químico del oro?": "au"
-        }
-        self.recompensas = ["ataque", "mana", "habilidad", "vida"]
+class Preguntero:
+    def __init__(self, archivo_json="preguntas.json"):
+        self.archivo = archivo_json
+        self.preguntas = self._cargar_preguntas()
+
+    def _cargar_preguntas(self):
+        try:
+            with open(self.archivo, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except FileNotFoundError:
+            print("⚠️ Archivo de preguntas no encontrado. Usando preguntas de emergencia.")
+            return [{"pregunta": "2 + 2", "respuesta": "4"}]
 
     def lanzar_desafio(self, personaje):
-        pregunta, respuesta = random.choice(list(self.preguntas.items()))
-        print(f"\n🧩 DESAFÍO DEL GUARDIÁN: {pregunta}")
-        usuario_resp = input("Tu respuesta: ").lower()
+        print("\n" + "═"*40)
+        print("📜 DESAFÍO DE CULTURA GENERAL")
+        print("═"*40)
+        
+        reto = random.choice(self.preguntas)
+        print(f"Pregunta: {reto['pregunta']}")
+        
+        intentos = 1
+        while intentos > 0:
+            res = input("Tu respuesta: ").strip().lower()
+            if res == reto['respuesta']:
+                print("✨ ¡Sabiduría ancestral demostrada!")
+                self._dar_recompensa(personaje)
+                return True
+            else:
+                print("❌ Respuesta incorrecta.")
+                intentos -= 1
+        return False
 
-        if usuario_resp == respuesta:
-            recompensa = random.choice(self.recompensas)
-            self.aplicar_recompensa(personaje, recompensa)
-            return True
-        else:
-            print("❌ Respuesta incorrecta. No hay bonificación para este combate.")
-            return False
-
-    def aplicar_recompensa(self, personaje, tipo):
-        if tipo == "ataque":
-            personaje._ataque_base += 10
-            print(f"✨ ¡Poder aumentado! +10 de Ataque (Total: {personaje._ataque_base})")
-        elif tipo == "mana":
-            personaje._mana_max += 20
+    def _dar_recompensa(self, personaje):
+        recompensa = random.choice(["ATK", "MP", "HP"])
+        if recompensa == "ATK":
+            personaje._ataque_base += 5
+            print(f"⚔️ ¡Tu ataque sube a {personaje._ataque_base}!")
+        elif recompensa == "MP":
+            personaje._mana_max += 25
             personaje._mana_actual = personaje._mana_max
-            print(f"✨ ¡Maná aumentado! +20 de Maná")
-        elif tipo == "vida":
-            personaje._vida_max += 30
+            print(f"🧪 ¡Tu maná máximo sube a {personaje._mana_max}!")
+        elif recompensa == "HP":
+            personaje._vida_max += 25
             personaje._vida_actual = personaje._vida_max
-            print(f"✨ ¡Vida máxima aumentada! +30 de HP")
+            print(f"❤️ ¡Tu salud máxima sube a {personaje._vida_max}!")
 
 if __name__ == "__main__":
     mi_rpg = Juego()
-    evento = EventoMundo()
+    evento = Preguntero()
     
     nivel_actual = 1
     subnivel_actual = 1
@@ -540,3 +569,5 @@ if __name__ == "__main__":
         nivel_actual += 1
         subnivel_actual = 1
         print(f"🎊 ¡INCREÍBLE! Has superado el NIVEL {nivel_actual-1}")
+
+  
