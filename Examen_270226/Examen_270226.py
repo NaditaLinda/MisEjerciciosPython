@@ -384,24 +384,31 @@ class Personaje(ABC):
 # --- 3. TIPOS DE PERSONAJE (Herencia y Polimorfismo) ---
 
 class Guerrero(Personaje):
-    def __init__(self, id_p, nom, niv, vid_max, mana_max, ataque):
-        super().__init__(id_p, nom, niv, vid_max, mana_max, ataque)
-
-    def ejecutar_danio_fisico(self, objetivo):
-        danio = self._ataque_base
-        print(f"⚔️ {self._nombre} lanza un tajo potente a {objetivo._nombre}!")
+    def ejecutar_danio_fisico(self, objetivo, multiplicador=1.0):
+        danio = int(self._ataque_base * multiplicador)
+        print(f"⚔️ {self._nombre} lanza un tajo de {self._elemento} a {objetivo._nombre}!")
         objetivo.recibir_danio(danio)
+
+    def usar_elemento(self):
+        print(f"🛡️ {self._nombre} imbuye su espada con el elemento {self._elemento}!")
+
+    def cambiar_elemento(self, nuevo_elemento):
+        coste_exp = 50
+        if self._exp >= coste_exp:
+            self._exp -= coste_exp
+            print(f"🔄 {self._nombre} ha cambiado su sintonía elemental de {self._elemento} a {nuevo_elemento}!")
+            self._elemento = nuevo_elemento
+        else:
+            print(f"❌ Necesitas {coste_exp} EXP para cambiar de elemento. (Tienes: {self._exp})")
 
 class Mago(Personaje):
-    def __init__(self, id_p, nom, niv, vid_max, mana_max=150, ataque=20): 
-        super().__init__(id_p, nom, niv, vid_max, mana_max, ataque)
-
-    def ejecutar_danio_fisico(self, objetivo):
-        # El mago suele tener poco ataque físico, 
-        # pero usamos su _ataque_base (potenciado por equipo si lo tiene)
-        danio = self._ataque_base
-        print(f"🧙 {self._nombre} golpea débilmente con su bastón a {objetivo._nombre}!")
+    def ejecutar_danio_fisico(self, objetivo, multiplicador=1.0):
+        danio = int(self._ataque_base * multiplicador)
+        print(f"🧙 {self._nombre} lanza una ráfaga de {self._elemento} a {objetivo._nombre}!")
         objetivo.recibir_danio(danio)
+        
+    def usar_elemento(self):
+        print(f"🔮 {self._nombre} canaliza la esencia del {self._elemento} en su báculo.")
 
 class NPC(Personaje):
     def __init__(self, id_p, nombre, dialogo):
