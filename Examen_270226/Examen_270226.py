@@ -698,6 +698,16 @@ if __name__ == "__main__":
     mi_rpg = Juego()
     archivo_save = "savegame.json"
 
+    # --- 1. INSERCIÓN: MAPEO DE ELEMENTOS ---
+    # Coloca esto al principio para que esté disponible en todo el bloque
+    MAPA_ELEMENTOS = {
+        "Fuego": Fuego(),
+        "Agua": Agua(),
+        "Tierra": Tierra(),
+        "Aire": Aire()
+    }
+    # ----------------------------------------
+
     # --- BLOQUE 1: LÓGICA DE INICIO ---
     if os.path.exists(archivo_save):
         print("\n💾 Partida detectada. 1. Continuar | 2. Nueva (Borrar)")
@@ -716,7 +726,9 @@ if __name__ == "__main__":
     if mi_rpg.jugadores:
         jugador = mi_rpg.jugadores[0]
     else:
-        jugador = Guerrero(1, "Brais", 1, 100, 50, 15, elemento="Fuego")
+        # --- 2. INSERCIÓN: CAMBIO AL CREAR JUGADOR ---
+        # Pasamos la instancia MAPA_ELEMENTOS["Fuego"] en lugar de solo el texto "Fuego"
+        jugador = Guerrero(1, "Brais", 1, 100, 50, 15, MAPA_ELEMENTOS["Fuego"])
         jugador.aprender_habilidad(bola_fuego)
         mi_rpg.jugadores.append(jugador)
 
@@ -727,33 +739,36 @@ if __name__ == "__main__":
     while nivel_actual <= 10:
         while subnivel_actual <= 10:
             nombre_zona = MUNDO[f"Nivel {nivel_actual}"][subnivel_actual-1]
-            
             intentos = 0
             max_intentos = 3
             victoria_lograda = False
 
-            # BUCLE DE INTENTOS
             while intentos < max_intentos and not victoria_lograda:
-                print(f"\n📍 {nombre_zona} ({nivel_actual}.{subnivel_actual}) - Intento {intentos + 1}/{max_intentos}")
+                print(f"\n📍 {nombre_zona} ({nivel_actual}.{subnivel_actual}) - Intento {intentos+1}/{max_intentos}")
                 
-                # 1. Generar enemigo
+                # --- 3. INSERCIÓN: GENERAR ENEMIGO CON OBJETO ELEMENTO ---
                 vida_e = 50 + (nivel_actual * 20) + (subnivel_actual * 8)
                 ataque_e = 8 + (nivel_actual * 3) + subnivel_actual
-                enemigo = random.choice([Guerrero, Mago])(99, f"Guardián", nivel_actual, vida_e, 40, ataque_e)
-                enemigo._elemento = random.choice(["Fuego", "Agua", "Tierra", "Planta"])
                 
-                # 2. Combate
+                # Elegimos una clave al azar y sacamos el OBJETO del diccionario
+                nombre_elem_e = random.choice(["Fuego", "Agua", "Tierra", "Aire"])
+                obj_elem_e = MAPA_ELEMENTOS[nombre_elem_e]
+                
+                clase_enemigo = random.choice([Guerrero, Mago])
+                # Pasamos obj_elem_e como último argumento
+                enemigo = clase_enemigo(99, f"Guardián", nivel_actual, vida_e, 40, ataque_e, obj_elem_e)
+                # ---------------------------------------------------------
+                
                 pelea = CombatePro(jugador, enemigo)
                 resultado = pelea.iniciar() 
 
-                # 3. Lógica de resultados
                 if resultado == ResultadoCombate.VICTORIA:
                     print("✅ ¡VICTORIA!")
                     if anciano.mision_activa:
                         anciano.mision_activa.validar_cumplimiento(jugador, jugador._elemento)
                     
                     victoria_lograda = True
-                    subnivel_actual += 1 # AVANZAMOS EL CONTADOR REAL
+                    subnivel_actual += 1 
                     jugador._vida_actual = min(jugador._vida_max, jugador._vida_actual + 20)
                     
                 elif resultado == ResultadoCombate.EMPATE:
@@ -761,21 +776,18 @@ if __name__ == "__main__":
                         intentos = max_intentos
                     else:
                         intentos += 1
-                else: # DERROTA
+                else:
                     intentos += 1
                     print(f"❌ Caíste. Quedan {max_intentos - intentos} intentos.")
                     jugador.restaurar_salud_y_mana()
 
-            # --- TRAS SALIR DEL BUCLE DE INTENTOS ---
             if not victoria_lograda:
                 print("💀 Game Over en este tramo.")
-                nivel_actual = 11; break # Salida de emergencia
+                nivel_actual = 11; break 
             
-            # --- OPCIÓN DE GUARDADO CADA SUBNIVEL (Más eficiente) ---
             if input("\n¿Quieres (G)uardar y salir o (C)ontinuar?: ").lower() == 'g':
                 mi_rpg.guardar_partida(nivel_actual, subnivel_actual)
                 nivel_actual = 11; subnivel_actual = 11; break
 
-        # Reset para el siguiente mundo
         nivel_actual += 1
         subnivel_actual = 1
