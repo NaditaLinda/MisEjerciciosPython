@@ -650,43 +650,61 @@ MUNDO = {
 
 if __name__ == "__main__":
     mi_rpg = Juego()
-    
-    # Intentamos cargar partida (ahora recupera nivel y subnivel)
-    nivel_actual, subnivel_actual = mi_rpg.cargar_partida()
-    
+    archivo_save = "savegame.json"
+
     print("--- ⚔️ BIENVENIDO A ALMA-IA: EL ASCENSO ⚔️ ---")
     
+    # --- BLOQUE 1: LÓGICA DE INICIO (Borrar o Cargar) ---
+    # Colocamos esto aquí para decidir el destino de la partida antes de nada
+    if os.path.exists(archivo_save):
+        print("\n💾 Se ha detectado una partida guardada.")
+        print("1. Continuar Partida")
+        print("2. Nueva Partida (BORRAR progreso anterior)")
+        opcion_inicio = input("Selecciona una opción (1/2): ")
+        
+        if opcion_inicio == "2":
+            confirmar = input("⚠️ ¿Estás seguro? Se perderán todos tus datos (s/n): ")
+            if confirmar.lower() == 's':
+                mi_rpg.borrar_partida(archivo_save)
+                nivel_actual, subnivel_actual = 1, 1
+            else:
+                nivel_actual, subnivel_actual = mi_rpg.cargar_partida(archivo_save)
+        else:
+            nivel_actual, subnivel_actual = mi_rpg.cargar_partida(archivo_save)
+    else:
+        # Si no hay archivo, empezamos desde el principio por defecto
+        nivel_actual, subnivel_actual = 1, 1
+    # ----------------------------------------------------
+
+    # --- BLOQUE 2: GESTIÓN DE JUGADORES ---
     if mi_rpg.jugadores:
         jugador = mi_rpg.jugadores[0]
+        print(f"✅ Cargando a {jugador._nombre}...")
     else:
-        # Al crear al jugador, añadimos el elemento inicial (ej: Fuego)
+        # Solo se ejecuta si no había partida o si se borró
         jugador = Guerrero(1, "Brais", 1, 100, 50, 15, elemento="Fuego")
         jugador.aprender_habilidad(bola_fuego)
         mi_rpg.jugadores.append(jugador)
 
-    # --- NUEVA FUNCIONALIDAD: INSTANCIA DE NPC Y MISIÓN ---
+    # --- BLOQUE 3: INSTANCIA DE NPC Y MISIÓN ---
+    # Importante: Asegúrate de que tu clase NPC ya tiene los métodos abstractos implementados
     anciano = NPC(50, "Maestro Zen", "El fuego consume, pero el agua fluye...")
-    # El NPC otorga una misión específica para el nivel actual
     anciano.otorgar_mision("Derrota al Guardián usando AGUA", "Agua", 100)
-    # -----------------------------------------------------
 
+    # --- BUCLE PRINCIPAL DE JUEGO ---
     while nivel_actual <= 10:
         while subnivel_actual <= 10:
             nombre_zona = MUNDO[f"Nivel {nivel_actual}"][subnivel_actual-1]
             print(f"\n📍 {nombre_zona} (Nivel {nivel_actual}.{subnivel_actual})")
             
-            # Recordatorio del NPC si pasamos por su zona
             anciano.hablar()
 
-            # 1. Generar enemigo con ELEMENTO ALEATORIO
+            # 1. Generar enemigo con ELEMENTO
             vida_e = 50 + (nivel_actual * 20) + (subnivel_actual * 8)
             ataque_e = 8 + (nivel_actual * 3) + subnivel_actual
-            
-            # Asignamos un elemento al enemigo para que la tabla de tipos funcione
             elem_e = random.choice(["Fuego", "Agua", "Tierra", "Planta"])
-            clase_e = random.choice([Guerrero, Mago])
             
-            # Creamos al enemigo con su elemento
+            clase_e = random.choice([Guerrero, Mago])
             enemigo = clase_e(99, f"Guardián de {nombre_zona}", nivel_actual, vida_e, 40, ataque_e)
             enemigo._elemento = elem_e 
             
@@ -694,11 +712,10 @@ if __name__ == "__main__":
             pelea = CombatePro(jugador, enemigo)
             resultado = pelea.iniciar() 
 
-            # 3. Lógica de progresión y VALIDACIÓN DE MISIÓN
+            # 3. Progresión y Misión
             if resultado == ResultadoCombate.VICTORIA:
                 print("✅ ¡Avanzas al siguiente subnivel!")
                 
-                # VALIDACIÓN DE MISIÓN ELEMENTAL
                 if anciano.mision_activa:
                     anciano.mision_activa.validar_cumplimiento(jugador, jugador._elemento)
                 
@@ -715,15 +732,15 @@ if __name__ == "__main__":
                 print("❌ Has sido derrotado. Debes repetir el nivel.")
                 jugador.restaurar_salud_y_mana()
 
+        # Al completar un mundo de 10 subniveles
         print(f"\n🎊 ¡HAS COMPLETADO EL MUNDO {nivel_actual}!")
+        print(f"💰 Tu EXP acumulada: {jugador._exp}")
         
-        # OPCIÓN DE CAMBIO DE ELEMENTO (Uso de la nueva funcionalidad)
-        print(f"💰 Tu EXP actual: {jugador._exp}")
         if input("¿Deseas intentar cambiar de elemento por 50 EXP? (s/n): ").lower() == 's':
-            nuevo = input("Elige elemento (Fuego, Agua, Tierra): ")
+            nuevo = input("Elige elemento (Fuego, Agua, Tierra): ").capitalize()
             jugador.cambiar_elemento(nuevo)
         
-        opcion = input("¿Quieres (G)uardar y salir o (C)ontinuar?: ").lower()
+        opcion = input("\n¿Quieres (G)uardar y salir o (C)ontinuar?: ").lower()
         if opcion == 'g':
             mi_rpg.guardar_partida(nivel_actual, subnivel_actual)
             break 
