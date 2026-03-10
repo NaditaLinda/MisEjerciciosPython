@@ -293,7 +293,7 @@ class Aire(Elemento):
 # --- 2. CLASES BASE DE PERSONAJE ---
 
 class Personaje(ABC):
-    def __init__(self, id_p, nombre, nivel, vida_max, mana_max, ataque_inicial, elemento="Neutro"):
+    def __init__(self, id_p, nombre, nivel, vida_max, mana_max, ataque_inicial, objeto_elemento):
         self._id = id_p
         self._nombre = nombre
         self._nivel = nivel
@@ -309,6 +309,8 @@ class Personaje(ABC):
         self._habilidades = []
         self._elemento = elemento
         self._exp = 0
+        self.instancia_elemento = objeto_elemento # Guardamos la clase (Fuego, Agua, etc.)
+        self._elemento = objeto_elemento.__class__.__name__
 
     def aplicar_estados(self):
         """Actualiza y aplica los efectos de todos los estados activos."""
@@ -391,26 +393,13 @@ class Personaje(ABC):
         pass
 
     def atacar(self, objetivo):
-        # 1. Verificación de Estados que impiden atacar
-        for estado in self.estados:
-            if estado.nombre == "Paralizado":
-                print(f"⚡ {self._nombre} está paralizado y no puede moverse!")
-                return 
-            
-            if estado.nombre == "Somnoliento":
-                print(f"😴 {self._nombre} está demasiado cansado para atacar con fuerza...")
-                return
-
-        # Si no hay impedimentos, aplicamos la lógica de elementos y luego el ataque fisico
-
-        multiplicador = self.obtener_multiplicador_elemental(objetivo._elemento)
+        # 1. Calculamos el multiplicador usando la lógica de la interfaz
+        multiplicador = self.instancia_elemento.calcular_multiplicador(objetivo._elemento)
         
-        if multiplicador > 1.0:
-            print(f"✨ ¡ES MUY EFICAZ! ({self._elemento} vs {objetivo._elemento})")
-        elif multiplicador < 1.0:
-            print(f"🛡️ No es muy eficaz... ({self._elemento} vs {objetivo._elemento})")
+        # 2. Aplicamos el efecto especial antes o después del daño
+        self.instancia_elemento.aplicar_efecto(self, objetivo)
 
-        # 3. Ejecutar daño físico pasando el multiplicador
+        # 3. Procedemos al daño físico
         self.ejecutar_danio_fisico(objetivo, multiplicador)
 
     def obtener_multiplicador_elemental(self, elemento_rival):
