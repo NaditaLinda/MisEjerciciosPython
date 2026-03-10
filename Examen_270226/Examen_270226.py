@@ -236,7 +236,7 @@ class Aire(ElementoInterface):
 # --- 2. CLASES BASE DE PERSONAJE ---
 
 class Personaje(ABC):
-    def __init__(self, id_p, nombre, nivel, vida_max, mana_max, ataque_inicial):
+    def __init__(self, id_p, nombre, nivel, vida_max, mana_max, ataque_inicial, elemento="Neutro"):
         self._id = id_p
         self._nombre = nombre
         self._nivel = nivel
@@ -250,6 +250,8 @@ class Personaje(ABC):
         self._arma_equipada = None
         self._armadura_equipada = None
         self._habilidades = []
+        self._elemento = elemento
+        self._exp = 0
 
     def aplicar_estados(self):
         """Actualiza y aplica los efectos de todos los estados activos."""
@@ -342,8 +344,32 @@ class Personaje(ABC):
                 print(f"😴 {self._nombre} está demasiado cansado para atacar con fuerza...")
                 return
 
-        # 2. Tras comprobación, procede al ataque
-        self.ejecutar_danio_fisico(objetivo)
+        # Si no hay impedimentos, aplicamos la lógica de elementos y luego el ataque fisico
+
+        multiplicador = self.obtener_multiplicador_elemental(objetivo._elemento)
+        
+        if multiplicador > 1.0:
+            print(f"✨ ¡ES MUY EFICAZ! ({self._elemento} vs {objetivo._elemento})")
+        elif multiplicador < 1.0:
+            print(f"🛡️ No es muy eficaz... ({self._elemento} vs {objetivo._elemento})")
+
+        # 3. Ejecutar daño físico pasando el multiplicador
+        self.ejecutar_danio_fisico(objetivo, multiplicador)
+
+    def obtener_multiplicador_elemental(self, elemento_rival):
+        # Tabla de tipos básica
+        tabla = {
+            "Fuego": {"Planta": 2.0, "Agua": 0.5},
+            "Agua": {"Fuego": 2.0, "Tierra": 0.5},
+            "Tierra": {"Rayo": 2.0, "Agua": 1.0},
+            "Neutro": {}
+        }
+        return tabla.get(self._elemento, {}).get(elemento_rival, 1.0)
+
+    @abstractmethod
+    def usar_elemento(self):
+        """Definido en subclases para efectos visuales o buffs."""
+        pass
 
     def __str__(self):
         return f"{self._nombre} ({self.__class__.__name__}) - Niv: {self._nivel} | HP: {self._vida_actual}/{self._vida_max}"
