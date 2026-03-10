@@ -528,6 +528,21 @@ class Juego:
                 
         print(f"📂 Partida cargada: {len(self.jugadores)} héroes en el tramo {n_act}.{s_act}")
         return n_act, s_act
+    
+    def borrar_partida(self, archivo="savegame.json"):
+        if os.path.exists(archivo):
+            try:
+                os.remove(archivo)
+                print("🗑️ Archivo de guardado eliminado correctamente.")
+                # Limpiamos también la lista de jugadores en memoria
+                self.jugadores = []
+                return True
+            except Exception as e:
+                print(f"❌ Error al borrar: {e}")
+                return False
+        else:
+            print("❓ No se encontró ninguna partida para borrar.")
+            return False
 
 # --- 5. SISTEMA DE COMBATE ---
 
