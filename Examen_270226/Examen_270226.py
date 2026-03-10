@@ -429,24 +429,26 @@ class MisionElemental:
         
 class NPC(Personaje):
     def __init__(self, id_p, nombre, dialogo):
-        # Los NPCs no tienen elemento ni estadísticas de combate
         super().__init__(id_p, nombre, 1, 100, 0, 0, elemento="Ninguno") 
         self.dialogo = dialogo
         self.mision_activa = None
 
+    # --- IMPLEMENTACIÓN OBLIGATORIA DE MÉTODOS ABSTRACTOS ---
+    def ejecutar_danio_fisico(self, objetivo, multiplicador=1.0):
+        """Los NPCs no hacen daño físico."""
+        pass
+
+    def usar_elemento(self):
+        """Los NPCs no usan poderes elementales."""
+        pass
+    # -------------------------------------------------------
+
     def otorgar_mision(self, descripcion, elemento_req, exp):
         self.mision_activa = MisionElemental(descripcion, elemento_req, exp)
         print(f"📜 [{self._nombre}] te ha dado una misión: {descripcion}")
-        print(f"🔍 Restricción: Debes vencer usando el elemento {elemento_req}.")
 
     def hablar(self):
-        print(f"[{self._nombre}] dice: {self.dialogo}")
-        if self.mision_activa and not self.mision_activa.completada:
-            print(f"⚠️ Recordatorio: {self.mision_activa.descripcion}")
-
-    def atacar(self, objetivo):
-        # Los NPCs no participan en combate
-        print(f"🕊️ {self._nombre} observa el combate desde la distancia, no es un guerrero.")
+        print(f"💬 [{self._nombre}]: {self.dialogo}")
 
 # --- 4. GESTIÓN DE JUEGO (Cerebro del sistema) ---
 
