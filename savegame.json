@@ -1,7 +1,7 @@
 {
     "progreso_mundo": {
         "nivel_actual": 1,
-        "subnivel_actual": 11
+        "subnivel_actual": 2
     },
     "personajes": [
         {
@@ -10,9 +10,9 @@
             "clase": "Guerrero",
             "nivel": 1,
             "elemento": "Fuego",
-            "experiencia": 100,
-            "vida_actual": 86,
-            "vida_max": 120,
+            "experiencia": 0,
+            "vida_actual": 96,
+            "vida_max": 100,
             "mana_actual": 50,
             "mana_max": 50,
             "ataque": 15
