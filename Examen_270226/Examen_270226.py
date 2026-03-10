@@ -181,6 +181,58 @@ class ResultadoCombate(Enum):
     DERROTA = 2
     EMPATE = 3
 
+class ElementoInterface(ABC):
+    @abstractmethod
+    def aplicar_efecto_especial(self, personaje):
+        """Cada elemento tendrá un efecto único al ser usado."""
+        pass
+
+    @abstractmethod
+    def calcular_ventaja(self, elemento_objetivo):
+        """Retorna un multiplicador de daño según la tabla de tipos."""
+        pass
+
+class Fuego(ElementoInterface):
+    def aplicar_efecto_especial(self, personaje):
+        print(f"🔥 El calor aumenta el ataque de {personaje._nombre} temporalmente!")
+        personaje._ataque_base += 2
+
+    def calcular_ventaja(self, elemento_objetivo):
+        if elemento_objetivo == "Planta": return 2.0
+        if elemento_objetivo == "Agua": return 0.5
+        return 1.0
+
+class Agua(ElementoInterface):
+    def aplicar_efecto_especial(self, personaje):
+        print(f"💧 El agua refresca a {personaje._nombre} y mejora su defensa!")
+        personaje._defensa += 2
+
+    def calcular_ventaja(self, elemento_objetivo):
+        if elemento_objetivo == "Fuego": return 2.0
+        if elemento_objetivo == "Tierra": return 0.5
+        return 1.0
+
+class Tierra(ElementoInterface):
+    def aplicar_efecto_especial(self, personaje):
+        print(f"🌱 La tierra fortalece a {personaje._nombre} y aumenta su vida!")
+        personaje._vida_max += 10
+        personaje._vida_actual = personaje._vida_max
+
+    def calcular_ventaja(self, elemento_objetivo):
+        if elemento_objetivo == "Agua": return 2.0
+        if elemento_objetivo == "Aire": return 0.5
+        return 1.0
+
+class Aire(ElementoInterface):
+    def aplicar_efecto_especial(self, personaje):
+        print(f"💨 El aire da velocidad a {personaje._nombre} y le permite moverse más rápido!")
+        personaje._velocidad += 2
+
+    def calcular_ventaja(self, elemento_objetivo):
+        if elemento_objetivo == "Fuego": return 2.0
+        if elemento_objetivo == "Tierra": return 0.5
+        return 1.0
+
 # --- 2. CLASES BASE DE PERSONAJE ---
 
 class Personaje(ABC):
