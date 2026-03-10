@@ -628,34 +628,58 @@ MUNDO = {
 if __name__ == "__main__":
     mi_rpg = Juego()
     
-    nivel_actual = 1
-    subnivel_actual = 1
-
+    # Intentamos cargar partida (ahora recupera nivel y subnivel)
+    nivel_actual, subnivel_actual = mi_rpg.cargar_partida()
+    
     print("--- ⚔️ BIENVENIDO A ALMA-IA: EL ASCENSO ⚔️ ---")
-    jugador = Guerrero(1, "Brais", 1, 100, 50, 15)
-    jugador.aprender_habilidad(bola_fuego)
+    
+    if mi_rpg.jugadores:
+        jugador = mi_rpg.jugadores[0]
+    else:
+        # Al crear al jugador, añadimos el elemento inicial (ej: Fuego)
+        jugador = Guerrero(1, "Brais", 1, 100, 50, 15, elemento="Fuego")
+        jugador.aprender_habilidad(bola_fuego)
+        mi_rpg.jugadores.append(jugador)
+
+    # --- NUEVA FUNCIONALIDAD: INSTANCIA DE NPC Y MISIÓN ---
+    anciano = NPC(50, "Maestro Zen", "El fuego consume, pero el agua fluye...")
+    # El NPC otorga una misión específica para el nivel actual
+    anciano.otorgar_mision("Derrota al Guardián usando AGUA", "Agua", 100)
+    # -----------------------------------------------------
 
     while nivel_actual <= 10:
         while subnivel_actual <= 10:
             nombre_zona = MUNDO[f"Nivel {nivel_actual}"][subnivel_actual-1]
             print(f"\n📍 {nombre_zona} (Nivel {nivel_actual}.{subnivel_actual})")
+            
+            # Recordatorio del NPC si pasamos por su zona
+            anciano.hablar()
 
-            # 1. Generar enemigo (Dificultad escalada)
+            # 1. Generar enemigo con ELEMENTO ALEATORIO
             vida_e = 50 + (nivel_actual * 20) + (subnivel_actual * 8)
             ataque_e = 8 + (nivel_actual * 3) + subnivel_actual
             
+            # Asignamos un elemento al enemigo para que la tabla de tipos funcione
+            elem_e = random.choice(["Fuego", "Agua", "Tierra", "Planta"])
             clase_e = random.choice([Guerrero, Mago])
+            
+            # Creamos al enemigo con su elemento
             enemigo = clase_e(99, f"Guardián de {nombre_zona}", nivel_actual, vida_e, 40, ataque_e)
+            enemigo._elemento = elem_e 
             
             # 2. Combate
             pelea = CombatePro(jugador, enemigo)
             resultado = pelea.iniciar() 
 
-            # 3. Lógica de progresión robusta con ENUMS
+            # 3. Lógica de progresión y VALIDACIÓN DE MISIÓN
             if resultado == ResultadoCombate.VICTORIA:
                 print("✅ ¡Avanzas al siguiente subnivel!")
+                
+                # VALIDACIÓN DE MISIÓN ELEMENTAL
+                if anciano.mision_activa:
+                    anciano.mision_activa.validar_cumplimiento(jugador, jugador._elemento)
+                
                 subnivel_actual += 1
-                # Cura parcial para eficiencia: no restauramos todo, solo un 20%
                 jugador._vida_actual = min(jugador._vida_max, jugador._vida_actual + 20)
                 
             elif resultado == ResultadoCombate.EMPATE:
@@ -668,14 +692,17 @@ if __name__ == "__main__":
                 print("❌ Has sido derrotado. Debes repetir el nivel.")
                 jugador.restaurar_salud_y_mana()
 
-        # --- FUERA DEL BUCLE DE SUBNIVELES ---
         print(f"\n🎊 ¡HAS COMPLETADO EL MUNDO {nivel_actual}!")
         
-        opcion = input("¿Quieres (G)uardar y salir o (C)ontinuar al siguiente mundo?: ").lower()
+        # OPCIÓN DE CAMBIO DE ELEMENTO (Uso de la nueva funcionalidad)
+        print(f"💰 Tu EXP actual: {jugador._exp}")
+        if input("¿Deseas intentar cambiar de elemento por 50 EXP? (s/n): ").lower() == 's':
+            nuevo = input("Elige elemento (Fuego, Agua, Tierra): ")
+            jugador.cambiar_elemento(nuevo)
+        
+        opcion = input("¿Quieres (G)uardar y salir o (C)ontinuar?: ").lower()
         if opcion == 'g':
-            # Ahora le pasamos en qué punto del mundo está Brais
             mi_rpg.guardar_partida(nivel_actual, subnivel_actual)
-            print("💾 Datos de mundo y personaje guardados. ¡Hasta pronto!")
             break 
         
         nivel_actual += 1
