@@ -410,6 +410,23 @@ class Mago(Personaje):
     def usar_elemento(self):
         print(f"🔮 {self._nombre} canaliza la esencia del {self._elemento} en su báculo.")
 
+class MisionElemental:
+    def __init__(self, descripcion, elemento_requerido, recompensa_exp):
+        self.descripcion = descripcion
+        self.elemento_requerido = elemento_requerido
+        self.recompensa_exp = recompensa_exp
+        self.completada = False
+
+    def validar_cumplimiento(self, personaje, elemento_usado_en_combate):
+        if elemento_usado_en_combate == self.elemento_requerido:
+            self.completada = True
+            personaje._exp += self.recompensa_exp
+            print(f"✅ ¡Misión Cumplida! Has ganado {self.recompensa_exp} EXP.")
+            return True
+        else:
+            print(f"❌ No has usado el elemento {self.elemento_requerido}. Misión fallida.")
+            return False
+        
 class NPC(Personaje):
     def __init__(self, id_p, nombre, dialogo):
         # Añadimos un '0' al final porque un NPC no tiene ataque base
