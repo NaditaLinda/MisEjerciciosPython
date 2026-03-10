@@ -232,7 +232,64 @@ class Aire(ElementoInterface):
         if elemento_objetivo == "Fuego": return 2.0
         if elemento_objetivo == "Tierra": return 0.5
         return 1.0
+from abc import ABC, abstractmethod
 
+class Elemento(ABC):
+    @abstractmethod
+    def aplicar_efecto(self, lanzador, objetivo):
+        """Aplica el efecto especial del elemento (cura, defensa, etc)."""
+        pass
+
+    @abstractmethod
+    def calcular_multiplicador(self, elemento_objetivo):
+        """Retorna el bono de daño según la tabla de tipos."""
+        pass
+
+# --- IMPLEMENTACIÓN DE LOS ELEMENTOS ---
+
+class Fuego(Elemento):
+    def aplicar_efecto(self, lanzador, objetivo):
+        print(f"🔥 ¡El calor de {lanzador._nombre} quema el ambiente!")
+        # Podrías añadir un estado de 'Quemado' aquí más adelante
+
+    def calcular_multiplicador(self, elemento_objetivo):
+        if elemento_objetivo == "Aire": return 1.5  # Daño extra
+        if elemento_objetivo == "Agua": return 0.5  # Debilidad
+        return 1.0
+
+class Agua(Elemento):
+    def aplicar_efecto(self, lanzador, objetivo):
+        if objetivo._elemento == "Tierra":
+            cura = 15
+            objetivo._vida_actual = min(objetivo._vida_max, objetivo._vida_actual + cura)
+            print(f"💧 El agua nutre a {objetivo._nombre}. Recupera {cura} HP.")
+        else:
+            print(f"💧 El agua fluye alrededor de {objetivo._nombre}.")
+
+    def calcular_multiplicador(self, elemento_objetivo):
+        if elemento_objetivo == "Fuego": return 1.5
+        return 1.0
+
+class Tierra(Elemento):
+    def aplicar_efecto(self, lanzador, objetivo):
+        if objetivo._elemento == "Tierra":
+            objetivo._defensa += 5
+            print(f"⛰️ La tierra fortalece la piel de {objetivo._nombre}. Defensa +5.")
+
+    def calcular_multiplicador(self, elemento_objetivo):
+        if elemento_objetivo == "Fuego": return 0.7 # Débil frente a fuego
+        return 1.0
+
+class Aire(Elemento):
+    def aplicar_efecto(self, lanzador, objetivo):
+        if objetivo._elemento == "Aire":
+            print(f"🌬️ Las corrientes de aire aceleran a {objetivo._nombre}.")
+            # Aquí podrías aumentar una estadística de 'Velocidad' si la añades al Personaje
+
+    def calcular_multiplicador(self, elemento_objetivo):
+        if elemento_objetivo == "Tierra": return 0.6 # Muy débil frente a tierra
+        return 1.0
+    
 # --- 2. CLASES BASE DE PERSONAJE ---
 
 class Personaje(ABC):
