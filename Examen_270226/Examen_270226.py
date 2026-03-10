@@ -477,10 +477,13 @@ class Juego:
                 "nombre": j._nombre,
                 "clase": j.__class__.__name__,
                 "nivel": j._nivel,
+                "elemento": j._elemento,        # <--- NUEVO: Guardamos el elemento actual
+                "experiencia": j._exp,          # <--- NUEVO: Guardamos la EXP acumulada
                 "vida_actual": j._vida_actual,
-                "vida_max": j._vida_max, # Es vital guardar el máximo también
+                "vida_max": j._vida_max, 
                 "mana_actual": j._mana_actual,
-                "ataque": j._ataque_base # Añadimos el ataque que faltaba
+                "mana_max": j._mana_max,        # <--- RECOMENDADO: Guardar también el maná máximo
+                "ataque": j._ataque_base 
             })
             
         with open(archivo, "w", encoding="utf-8") as f:
@@ -489,33 +492,36 @@ class Juego:
    
     def cargar_partida(self, archivo="savegame.json"):
         if not os.path.exists(archivo):
-            return 1, 1 # Si no hay archivo, empezamos desde el principio
+            return 1, 1 
             
         with open(archivo, "r", encoding="utf-8") as f:
             datos = json.load(f)
             self.jugadores = []
             clase_map = {"Guerrero": Guerrero, "Mago": Mago}
             
-            # 1. Recuperamos los datos del mundo
             progreso = datos.get("progreso_mundo", {"nivel_actual": 1, "subnivel_actual": 1})
             n_act = progreso["nivel_actual"]
             s_act = progreso["subnivel_actual"]
 
-            # 2. Reconstruimos los personajes
             for d in datos["personajes"]:
                 clase_ref = clase_map.get(d["clase"], Guerrero)
                 
-                # Usamos los datos guardados para reconstruir el objeto exacto
+                # 1. Pasamos el ELEMENTO al constructor (es el 7º argumento según tu nueva clase)
                 p = clase_ref(
                     d["id"], 
                     d["nombre"], 
                     d["nivel"], 
-                    d.get("vida_max", 100), # Recuperamos el máximo real
+                    d.get("vida_max", 100), 
                     d.get("mana_max", 50),
-                    d.get("ataque", 15)
+                    d.get("ataque", 15),
+                    d.get("elemento", "Neutro") # <--- NUEVO: Recuperamos elemento
                 )
+                
+                # 2. Asignamos el resto de variables de estado
                 p._vida_actual = d["vida_actual"]
                 p._mana_actual = d["mana_actual"]
+                p._exp = d.get("experiencia", 0) # <--- NUEVO: Recuperamos la EXP
+                
                 self.jugadores.append(p)
                 
         print(f"📂 Partida cargada: {len(self.jugadores)} héroes en el tramo {n_act}.{s_act}")
@@ -558,7 +564,7 @@ class CombatePro:
             print(f"   > {self.e1}\n")
 
         # 7. RESULTADO FINAL
-        # 7. RESULTADO FINAL (Usando Enums)
+        
         if self.j1.esta_vivo():
             print(f"🏆 ¡{self.j1._nombre} ha ganado!")
             return ResultadoCombate.VICTORIA

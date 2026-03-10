@@ -3,5 +3,19 @@
         "nivel_actual": 1,
         "subnivel_actual": 11
     },
-    "personajes": []
+    "personajes": [
+        {
+            "id": 1,
+            "nombre": "Brais",
+            "clase": "Guerrero",
+            "nivel": 1,
+            "elemento": "Fuego",
+            "experiencia": 100,
+            "vida_actual": 86,
+            "vida_max": 120,
+            "mana_actual": 50,
+            "mana_max": 50,
+            "ataque": 15
+        }
+    ]
 }
