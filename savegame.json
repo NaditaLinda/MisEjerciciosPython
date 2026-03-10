@@ -1,7 +1,7 @@
 {
     "progreso_mundo": {
         "nivel_actual": 1,
-        "subnivel_actual": 2
+        "subnivel_actual": 3
     },
     "personajes": [
         {
@@ -11,7 +11,7 @@
             "nivel": 1,
             "elemento": "Fuego",
             "experiencia": 0,
-            "vida_actual": 96,
+            "vida_actual": 71,
             "vida_max": 100,
             "mana_actual": 50,
             "mana_max": 50,

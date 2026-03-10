@@ -293,7 +293,7 @@ class Aire(Elemento):
 # --- 2. CLASES BASE DE PERSONAJE ---
 
 class Personaje(ABC):
-    def __init__(self, id_p, nombre, nivel, vida_max, mana_max, ataque_inicial, objeto_elemento):
+    def __init__(self, id_p, nombre, nivel, vida_max, mana_max, ataque_inicial, obj_elemento):
         self._id = id_p
         self._nombre = nombre
         self._nivel = nivel
@@ -307,10 +307,10 @@ class Personaje(ABC):
         self._arma_equipada = None
         self._armadura_equipada = None
         self._habilidades = []
-        self._elemento = elemento
+        self._elemento = Elemento
         self._exp = 0
-        self.instancia_elemento = objeto_elemento # Guardamos la clase (Fuego, Agua, etc.)
-        self._elemento = objeto_elemento.__class__.__name__
+        self.instancia_elemento = obj_elemento # Guardamos la clase (Fuego, Agua, etc.)
+        self._elemento = obj_elemento.__class__.__name__
 
     def aplicar_estados(self):
         """Actualiza y aplica los efectos de todos los estados activos."""
@@ -430,7 +430,12 @@ class Personaje(ABC):
 # --- 3. TIPOS DE PERSONAJE (Herencia y Polimorfismo) ---
 
 class Guerrero(Personaje):
+    def __init__(self, id_p, nom, niv, vid_max, mana_max, ataque, obj_elemento):
+        # Lo pasamos al padre (Personaje) para que él gestione la instancia
+        super().__init__(id_p, nom, niv, vid_max, mana_max, ataque, obj_elemento)
+
     def ejecutar_danio_fisico(self, objetivo, multiplicador=1.0):
+        # Ahora el daño base se ve afectado por la tabla de tipos elemental
         danio = int(self._ataque_base * multiplicador)
         print(f"⚔️ {self._nombre} lanza un tajo de {self._elemento} a {objetivo._nombre}!")
         objetivo.recibir_danio(danio)
@@ -448,9 +453,13 @@ class Guerrero(Personaje):
             print(f"❌ Necesitas {coste_exp} EXP para cambiar de elemento. (Tienes: {self._exp})")
 
 class Mago(Personaje):
+    # Asegúrate de que los argumentos coincidan con los que envías desde el 'main' o 'cargar_partida'
+    def __init__(self, id_p, nom, niv, vid_max, mana_max, ataque, obj_elemento): 
+        super().__init__(id_p, nom, niv, vid_max, mana_max, ataque, obj_elemento)
+
     def ejecutar_danio_fisico(self, objetivo, multiplicador=1.0):
         danio = int(self._ataque_base * multiplicador)
-        print(f"🧙 {self._nombre} lanza una ráfaga de {self._elemento} a {objetivo._nombre}!")
+        print(f"🧙 {self._nombre} golpea con su báculo de {self._elemento} a {objetivo._nombre}!")
         objetivo.recibir_danio(danio)
         
     def usar_elemento(self):
@@ -475,11 +484,12 @@ class MisionElemental:
         
 class NPC(Personaje):
     def __init__(self, id_p, nombre, dialogo):
-        super().__init__(id_p, nombre, 1, 100, 0, 0, elemento="Ninguno") 
+        super().__init__(id_p, nombre, 1, 100, 0, 0, Fuego()) 
+        
         self.dialogo = dialogo
         self.mision_activa = None
-
     # --- IMPLEMENTACIÓN OBLIGATORIA DE MÉTODOS ABSTRACTOS ---
+
     def ejecutar_danio_fisico(self, objetivo, multiplicador=1.0):
         """Los NPCs no hacen daño físico."""
         pass
@@ -545,8 +555,18 @@ class Juego:
         with open(archivo, "r", encoding="utf-8") as f:
             datos = json.load(f)
             self.jugadores = []
-            clase_map = {"Guerrero": Guerrero, "Mago": Mago}
             
+            # --- MAPEOS DE RECONSTRUCCIÓN ---
+            clase_map = {"Guerrero": Guerrero, "Mago": Mago}
+            mapa_elementos = {
+                "Fuego": Fuego(),
+                "Agua": Agua(),
+                "Tierra": Tierra(),
+                "Aire": Aire(),
+                "Neutro": Fuego() # Valor por defecto seguro
+            }
+            # -------------------------------
+
             progreso = datos.get("progreso_mundo", {"nivel_actual": 1, "subnivel_actual": 1})
             n_act = progreso["nivel_actual"]
             s_act = progreso["subnivel_actual"]
@@ -554,7 +574,11 @@ class Juego:
             for d in datos["personajes"]:
                 clase_ref = clase_map.get(d["clase"], Guerrero)
                 
-                # 1. Pasamos el ELEMENTO al constructor (es el 7º argumento según tu nueva clase)
+                # Recuperamos el nombre del elemento del JSON y obtenemos el OBJETO
+                nombre_elem_guardado = d.get("elemento", "Neutro")
+                obj_elemento = mapa_elementos.get(nombre_elem_guardado, mapa_elementos["Neutro"])
+                
+                # Instanciamos al personaje con su OBJETO elemento
                 p = clase_ref(
                     d["id"], 
                     d["nombre"], 
@@ -562,17 +586,16 @@ class Juego:
                     d.get("vida_max", 100), 
                     d.get("mana_max", 50),
                     d.get("ataque", 15),
-                    d.get("elemento", "Neutro") # <--- NUEVO: Recuperamos elemento
+                    obj_elemento  # <--- PASAMOS EL OBJETO, NO EL TEXTO
                 )
                 
-                # 2. Asignamos el resto de variables de estado
                 p._vida_actual = d["vida_actual"]
                 p._mana_actual = d["mana_actual"]
-                p._exp = d.get("experiencia", 0) # <--- NUEVO: Recuperamos la EXP
+                p._exp = d.get("experiencia", 0)
                 
                 self.jugadores.append(p)
                 
-        print(f"📂 Partida cargada: {len(self.jugadores)} héroes en el tramo {n_act}.{s_act}")
+        print(f"📂 Partida cargada: {len(self.jugadores)} héroes con sus poderes elementales intactos.")
         return n_act, s_act
     
     def borrar_partida(self, archivo="savegame.json"):
