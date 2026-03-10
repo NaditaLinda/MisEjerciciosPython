@@ -1,12 +1,7 @@
-[
-    {
-        "id": 1,
-        "nombre": "Brais",
-        "clase": "Guerrero",
-        "nivel": 5,
-        "vida": 120,
-        "mana": 50,
-        "ataque": 15
-    }
-  
-]
+{
+    "progreso_mundo": {
+        "nivel_actual": 1,
+        "subnivel_actual": 11
+    },
+    "personajes": []
+}
