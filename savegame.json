@@ -1,7 +1,7 @@
 {
     "progreso_mundo": {
         "nivel_actual": 1,
-        "subnivel_actual": 5
+        "subnivel_actual": 6
     },
     "personajes": [
         {
@@ -9,9 +9,9 @@
             "nombre": "Brais",
             "clase": "Guerrero",
             "nivel": 1,
-            "elemento": "Fuego",
-            "experiencia": 0,
-            "vida_actual": 60,
+            "elemento": "Agua",
+            "experiencia": 100,
+            "vida_actual": 88,
             "vida_max": 100,
             "mana_actual": 50,
             "mana_max": 50,
