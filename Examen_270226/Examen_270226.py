@@ -624,60 +624,84 @@ class CombatePro:
         print(f"\n--- INICIO DEL COMBATE: {self.j1._nombre} vs {self.e1._nombre} ---")
         
         while self.j1.esta_vivo() and self.e1.esta_vivo():
-            # 1. PROCESAR ESTADOS (Venenos, parálisis, etc.)
-            print(f"\n--- Turno de {self.j1._nombre} ---")
+            # 1. PROCESAR ESTADOS
             self.j1.aplicar_estados()
             self.e1.aplicar_estados()
             
-            # 2. VERIFICACIÓN TRAS ESTADOS
-            if not self.j1.esta_vivo() or not self.e1.esta_vivo():
-                break
+            if not self.j1.esta_vivo() or not self.e1.esta_vivo(): break
 
-            # 3. ACCIÓN JUGADOR 1 (Ahora con IA aleatoria)
+            # 2. TURNO DEL JUGADOR (Manual)
             if self.j1.esta_vivo():
-                self.ejecutar_turno_logico(self.j1, self.e1)
+                self.menu_jugador() # <--- Cambio clave: ahora tú eliges
             
-            # 4. VERIFICACIÓN TRAS ATAQUE J1
-            if not self.e1.esta_vivo():
-                break
+            if not self.e1.esta_vivo(): break
             
-            # 5. ACCIÓN ENEMIGO 1 (Ahora con IA aleatoria)
+            # 3. TURNO DEL ENEMIGO (IA Automática)
             if self.e1.esta_vivo():
-                self.ejecutar_turno_logico(self.e1, self.j1)
+                print(f"\n--- Turno de {self.e1._nombre} (Enemigo) ---")
+                self.ejecutar_turno_ia(self.e1, self.j1)
             
-            # 6. MOSTRAR RESUMEN DEL TURNO
-            print(f"   > {self.j1}")
-            print(f"   > {self.e1}\n")
+            # 4. RESUMEN
+            print(f"\n   > {self.j1}")
+            print(f"   > {self.e1}")
 
-        # 7. RESULTADO FINAL
-        
+        # RESULTADO FINAL
         if self.j1.esta_vivo():
-            print(f"🏆 ¡{self.j1._nombre} ha ganado!")
+            print(f"\n🏆 ¡{self.j1._nombre} ha ganado!")
             return ResultadoCombate.VICTORIA
         elif not self.j1.esta_vivo() and not self.e1.esta_vivo():
-            print("🤝 ¡Empate técnico! Ambos han caído.")
+            print("\n🤝 ¡Empate técnico!")
             return ResultadoCombate.EMPATE
         else:
-            print(f"💀 {self.j1._nombre} ha sido derrotado...")
+            print(f"\n💀 {self.j1._nombre} ha sido derrotado...")
             return ResultadoCombate.DERROTA
 
-    def ejecutar_turno_logico(self, atacante, defensor):
-        """Decide aleatoriamente entre ataque físico o habilidad."""
-        # Definimos probabilidad: 40% de usar habilidad si tiene maná
-        probabilidad_habilidad = 0.4
-        
-        if atacante._habilidades and random.random() < probabilidad_habilidad:
-            # Elegimos una habilidad al azar de su lista
+    def menu_jugador(self):
+        """Muestra el menú interactivo para que Brais pueda cumplir su misión."""
+        print(f"\n--- Turno de {self.j1._nombre} (Tú) ---")
+        print(f"Sintonía actual: {self.j1._elemento}")
+        print("1. Ataque Físico")
+        print("2. Usar Habilidad")
+        print("3. Cambiar Elemento (Coste: 10 Maná)")
+
+        opcion = input("Elige tu acción: ")
+
+        if opcion == "1":
+            self.j1.atacar(self.e1)
+        elif opcion == "2":
+            if not self.j1._habilidades:
+                print("❌ No conoces habilidades. Atacas físicamente.")
+                self.j1.atacar(self.e1)
+            else:
+                for i, h in enumerate(self.j1._habilidades):
+                    print(f"{i}. {h.nombre} ({h.costo_mana} MP)")
+                idx = int(input("Selecciona habilidad: "))
+                self.j1.ejecutar_habilidad(idx, self.e1)
+        elif opcion == "3":
+            if self.j1.consumir_mana(10):
+                print("Elementos disponibles: Fuego, Agua, Tierra, Aire")
+                nuevo = input("Nuevo elemento: ").capitalize()
+                if nuevo in MAPA_ELEMENTOS:
+                    # Aplicamos el cambio usando el mapa que definimos en el main
+                    self.j1.instancia_elemento = MAPA_ELEMENTOS[nuevo]
+                    self.j1._elemento = nuevo
+                    print(f"✨ ¡{self.j1._nombre} ahora sintoniza con {nuevo}!")
+                    # Tras cambiar, permitimos atacar
+                    self.j1.atacar(self.e1)
+                else:
+                    print("❌ Elemento fallido. Pierdes el turno.")
+            else:
+                print("❌ No tienes maná suficiente para cambiar.")
+                self.j1.atacar(self.e1)
+
+    def ejecutar_turno_ia(self, atacante, defensor):
+        """IA para el enemigo (Sigue siendo aleatoria)."""
+        if atacante._habilidades and random.random() < 0.3:
             habilidad = random.choice(atacante._habilidades)
-            
-            # Verificamos si tiene maná suficiente
             if atacante._mana_actual >= habilidad.costo_mana:
-                # Usamos el método ejecutar_habilidad (que ya pusimos en Personaje)
                 indice = atacante._habilidades.index(habilidad)
                 atacante.ejecutar_habilidad(indice, defensor)
-                return # Finaliza el turno si usa habilidad con éxito
-
-        # Si no tiene habilidades, no tiene maná o falló la probabilidad: Ataque físico
+                return
         atacante.atacar(defensor)
 
 # Esta es una implementación concreta que SÍ se puede instanciar
