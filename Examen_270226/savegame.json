@@ -1,7 +1,7 @@
 {
     "progreso_mundo": {
         "nivel_actual": 1,
-        "subnivel_actual": 9
+        "subnivel_actual": 2
     },
     "personajes": [
         {
@@ -10,8 +10,8 @@
             "clase": "Guerrero",
             "nivel": 1,
             "elemento": "Tierra",
-            "experiencia": 300,
-            "vida_actual": 23,
+            "experiencia": 100,
+            "vida_actual": 100,
             "vida_max": 100,
             "mana_actual": 40,
             "mana_max": 50,
